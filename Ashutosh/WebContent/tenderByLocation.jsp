@@ -20,8 +20,6 @@
 		.header{
 			display: grid;
 			grid-template: "sat headtitle mapindia";
-			grid-template-columns: auto auto auto;
-			grid-template-rows: auto auto auto auto auto;
 			height: 100%;
 			padding: 2px;
 			color:black;
@@ -82,14 +80,7 @@
 			width:auto;
 		}
 
-		.datass
-		{
-			display: inline-block;
-			color: white;
-			width: 100%;
-			background-color: maroon;
-		}
-
+		
 		@media only screen and (max-width: 600px) 
 		{
 			body{
@@ -112,29 +103,27 @@
 	<headtitle><img class="logo" src="topban.png" alt="goi-logo"></headtitle>
 	<mapindia><img class="logo1" src="india2.png" alt="goi-logo"></mapindia>
 </div>
-
-<div class="datass">
-28th APril,2020
-</div>
-	<div class="main-body">
+<div class="main-body">
 <!--Aside starts from here-->	
 	<aside>
 		<input type="button" class="links" value="MIS Reports" ></button><br>
-		<input type="button" class="links" value="Tender By Location" onclick="window.location.href = 'tenderByLocation.jsp';"></button><br>
+		<input type="button" class="links" value="Tender By Location" ></button><br>
 		<input type="button" class="links" value="MIS" ></button><br>
 		<input type="button" class="links" value="MIS" ></button><br>
 		<input type="button" class="links" value="MIS" ></button><br>
 	</aside>
 
 <!--Main starts from here-->	
-		<main>
-			<div class="card">
-				<div class="card-header">
-					Latest Tender
-				</div>
-					<div class="card-body">
-					<marquee direction="up"> <p class="card-text">With supporting text below as a natural lead-in to additional content.</p></marquee>
-					</div>
+	<main>
+			<div class="jumbotron">
+			  <h1 class="display-4">Tender Search By Location</h1>
+			  <p class="lead">Please type in the location, the search would give a list of tenders and related information based on the location entered.			</p>
+			  <hr class="my-4">
+			  <p class="lead">
+				<form>
+                    Location :<input type="text" class="">
+                </form>
+			  </p>
 			</div>
 	</main>
 <!--Login starts from here-->	
@@ -150,7 +139,7 @@
 						<label for="exampleInputPassword1">Password</label>
 						<input type="password" class="form-control" id="exampleInputPassword1">
 					</div>
-							<div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
+						<!---<div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>-->	
 							&nbsp &nbsp
 							<button type="submit" class="btn btn-primary">Login</button>
 							<br><br>

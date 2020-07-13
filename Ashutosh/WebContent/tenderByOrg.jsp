@@ -20,8 +20,6 @@
 		.header{
 			display: grid;
 			grid-template: "sat headtitle mapindia";
-			grid-template-columns: auto auto auto;
-			grid-template-rows: auto auto auto auto auto;
 			height: 100%;
 			padding: 2px;
 			color:black;
@@ -82,14 +80,7 @@
 			width:auto;
 		}
 
-		.datass
-		{
-			display: inline-block;
-			color: white;
-			width: 100%;
-			background-color: maroon;
-		}
-
+		
 		@media only screen and (max-width: 600px) 
 		{
 			body{
@@ -112,15 +103,11 @@
 	<headtitle><img class="logo" src="topban.png" alt="goi-logo"></headtitle>
 	<mapindia><img class="logo1" src="india2.png" alt="goi-logo"></mapindia>
 </div>
-
-<div class="datass">
-28th APril,2020
-</div>
-	<div class="main-body">
+<div class="main-body">
 <!--Aside starts from here-->	
 	<aside>
 		<input type="button" class="links" value="MIS Reports" ></button><br>
-		<input type="button" class="links" value="Tender By Location" onclick="window.location.href = 'tenderByLocation.jsp';"></button><br>
+		<input type="button" class="links" value="Tender By Location" ></button><br>
 		<input type="button" class="links" value="MIS" ></button><br>
 		<input type="button" class="links" value="MIS" ></button><br>
 		<input type="button" class="links" value="MIS" ></button><br>
@@ -128,14 +115,15 @@
 
 <!--Main starts from here-->	
 		<main>
-			<div class="card">
-				<div class="card-header">
-					Latest Tender
-				</div>
-					<div class="card-body">
-					<marquee direction="up"> <p class="card-text">With supporting text below as a natural lead-in to additional content.</p></marquee>
-					</div>
-			</div>
+			<div class="jumbotron">
+                <h1 class="display-4">Tender By Organisation</h1>
+                <p class="lead"></p>
+                <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                </p>
+              </div>
 	</main>
 <!--Login starts from here-->	
 		<login>
