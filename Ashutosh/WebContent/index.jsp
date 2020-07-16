@@ -69,7 +69,7 @@
 			background-color: #e8e8e8;
 			width: 60%;
 			margin-left: 10px;
-			margin-right: 10px;
+			right:0px;
 			float: center;
 		}
 		.links
