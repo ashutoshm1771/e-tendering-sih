@@ -60,6 +60,7 @@
 
 		aside{
 			background-color:#e8e8e8;
+			width:auto;
 		}
 		
 		login{
