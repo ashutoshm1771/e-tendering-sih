@@ -70,7 +70,7 @@
 			background-color: #e8e8e8;
 			width: 60%;
 			margin-left: 10px;
-			right:0px;
+			margin-right: 10px;
 			float: center;
 		}
 		.links
@@ -121,11 +121,12 @@
 	<div class="main-body">
 <!--Aside starts from here-->	
 	<aside>
-		<input type="button" class="links" value="MIS Reports" ></button><br>
+		<input type="button" class="links" value="Home" onclick="window.location.href = 'index.jsp';"></button><br>
+		<input type="button" class="links" value="MIS Reports" onclick="window.location.href = 'misReports.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Location" onclick="window.location.href = 'tenderByLocation.jsp';"></button><br>
-		<input type="button" class="links" value="MIS" ></button><br>
-		<input type="button" class="links" value="MIS" ></button><br>
-		<input type="button" class="links" value="MIS" ></button><br>
+		<input type="button" class="links" value="Tender By Organisation" onclick="window.location.href = 'tenderByOrg.jsp';"></button><br>
+		<input type="button" class="links" value="Tender By Classification" onclick="window.location.href = 'tenderByClass.jsp';"></button><br>
+		<input type="button" class="links" value="Tenders in Archive" onclick="window.location.href = 'tendersInArchive.jsp';"></button><br>
 	</aside>
 
 <!--Main starts from here-->	
