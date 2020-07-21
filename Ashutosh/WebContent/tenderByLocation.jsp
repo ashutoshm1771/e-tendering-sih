@@ -106,11 +106,12 @@
 <div class="main-body">
 <!--Aside starts from here-->	
 	<aside>
-		<input type="button" class="links" value="MIS Reports" ></button><br>
-		<input type="button" class="links" value="Tender By Location" ></button><br>
-		<input type="button" class="links" value="MIS" ></button><br>
-		<input type="button" class="links" value="MIS" ></button><br>
-		<input type="button" class="links" value="MIS" ></button><br>
+		<input type="button" class="links" value="Home" onclick="window.location.href = 'index.jsp';"></button><br>
+		<input type="button" class="links" value="MIS Reports" onclick="window.location.href = 'misReports.jsp';"></button><br>
+		<input type="button" class="links" value="Tender By Location" onclick="window.location.href = 'tenderByLocation.jsp';"></button><br>
+		<input type="button" class="links" value="Tender By Organisation" onclick="window.location.href = 'tenderByOrg.jsp';"></button><br>
+		<input type="button" class="links" value="Tender By Classification" onclick="window.location.href = 'tenderByClass.jsp';"></button><br>
+		<input type="button" class="links" value="Tenders in Archive" onclick="window.location.href = 'tendersInArchive.jsp';"></button><br>
 	</aside>
 
 <!--Main starts from here-->	
@@ -120,8 +121,8 @@
 			  <p class="lead">Please type in the location, the search would give a list of tenders and related information based on the location entered.			</p>
 			  <hr class="my-4">
 			  <p class="lead">
-				<form>
-                    Location :<input type="text" class="">
+				<form method="POST" action="#">
+                    Location &nbsp; : &nbsp; <input type="text" class=""> &nbsp; <button type="submit" class="btn btn-primary">Search</button>
                 </form>
 			  </p>
 			</div>
