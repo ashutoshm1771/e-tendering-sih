@@ -98,19 +98,23 @@
 	</style>
 </head>
 <body>
-<div class="header">
-	<sat><img class="logo" src="satya3.png" alt="goi-logo"></sat>
-	<headtitle><img class="logo" src="topban.png" alt="goi-logo"></headtitle>
-	<mapindia><img class="logo1" src="india2.png" alt="goi-logo"></mapindia>
-</div>
+	<div class="header">
+		<sat><img class="logo" src="images/satya3.png" alt="goi-logo"></sat>
+		<headtitle><img class="logo" src="images/etendering.png" alt="goi-logo"></headtitle>
+		<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
+	</div>
 <div class="main-body">
 <!--Aside starts from here-->	
 	<aside>
-		<input type="button" class="links" value="MIS Reports" ></button><br>
-		<input type="button" class="links" value="Tender By Location" ></button><br>
-		<input type="button" class="links" value="MIS" ></button><br>
-		<input type="button" class="links" value="MIS" ></button><br>
-		<input type="button" class="links" value="MIS" ></button><br>
+		<input type="button" class="links" value="Home" onclick="window.location.href = 'index.jsp';"></button><br>
+		<input type="button" class="links" value="MIS Reports" onclick="window.location.href = 'misReports.jsp';"></button><br>
+		<input type="button" class="links" value="Tender By Location" onclick="window.location.href = 'tenderByLocation.jsp';"></button><br>
+		<input type="button" class="links" value="Tender By Organisation" onclick="window.location.href = 'tenderByOrg.jsp';"></button><br>
+		<input type="button" class="links" value="Tender By Classification" onclick="window.location.href = 'tenderByClass.jsp';"></button><br>
+		<input type="button" class="links" value="Tenders in Archive" onclick="window.location.href = 'tendersInArchive.jsp';"></button><br>
+		<input type="button" class="links" value="Announcements" onclick="window.location.href = 'announcement.jsp';"></button><br>
+		<input type="button" class="links" value="Cancelled/Retendered" onclick="window.location.href = 'cancelled.jsp';"></button><br>
+    	<input type="button" class="links" value="Debarment List" onclick="window.location.href = 'debarment.jsp';"></button><br>
 	</aside>
 
 <!--Main starts from here-->	
@@ -119,7 +123,7 @@
                 <h1 class="display-4">Tender By Organisation</h1>
                 <p class="lead"></p>
                 <hr class="my-4">
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <p></p>
                 <p class="lead">
                   <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
                 </p>

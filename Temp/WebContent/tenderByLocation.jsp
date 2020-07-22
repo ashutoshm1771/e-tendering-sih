@@ -76,7 +76,7 @@
 			width: 	180PX;
 		}
 		.g-recaptcha{
-			margin-left: 5px;
+			margin-left: 20px;
 			width:auto;
 		}
 
@@ -98,19 +98,23 @@
 	</style>
 </head>
 <body>
-<div class="header">
-	<sat><img class="logo" src="satya3.png" alt="goi-logo"></sat>
-	<headtitle><img class="logo" src="topban.png" alt="goi-logo"></headtitle>
-	<mapindia><img class="logo1" src="india2.png" alt="goi-logo"></mapindia>
-</div>
+	<div class="header">
+		<sat><img class="logo" src="images/satya3.png" alt="goi-logo"></sat>
+		<headtitle><img class="logo" src="images/etendering.png" alt="goi-logo"></headtitle>
+		<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
+	</div>
 <div class="main-body">
 <!--Aside starts from here-->	
 	<aside>
-		<input type="button" class="links" value="MIS Reports" ></button><br>
-		<input type="button" class="links" value="Tender By Location" ></button><br>
-		<input type="button" class="links" value="MIS" ></button><br>
-		<input type="button" class="links" value="MIS" ></button><br>
-		<input type="button" class="links" value="MIS" ></button><br>
+		<input type="button" class="links" value="Home" onclick="window.location.href = 'index.jsp';"></button><br>
+		<input type="button" class="links" value="MIS Reports" onclick="window.location.href = 'misReports.jsp';"></button><br>
+		<input type="button" class="links" value="Tender By Location" onclick="window.location.href = 'tenderByLocation.jsp';"></button><br>
+		<input type="button" class="links" value="Tender By Organisation" onclick="window.location.href = 'tenderByOrg.jsp';"></button><br>
+		<input type="button" class="links" value="Tender By Classification" onclick="window.location.href = 'tenderByClass.jsp';"></button><br>
+		<input type="button" class="links" value="Tenders in Archive" onclick="window.location.href = 'tendersInArchive.jsp';"></button><br>
+		<input type="button" class="links" value="Announcements" onclick="window.location.href = 'announcement.jsp';"></button><br>
+		<input type="button" class="links" value="Cancelled/Retendered" onclick="window.location.href = 'cancelled.jsp';"></button><br>
+    	<input type="button" class="links" value="Debarment List" onclick="window.location.href = 'debarment.jsp';"></button><br>
 	</aside>
 
 <!--Main starts from here-->	
@@ -120,31 +124,18 @@
 			  <p class="lead">Please type in the location, the search would give a list of tenders and related information based on the location entered.			</p>
 			  <hr class="my-4">
 			  <p class="lead">
-				<form>
-                    Location :<input type="text" class="">
+				<form method="POST" action="#">
+                    <div class="form-group">
+						<label for="exampleInputName1">Location</label>
+						 <input type="text" class="form-control" name="location" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Enter the location" required>
+						 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+					 </div> &nbsp; &nbsp; <hr class="my-4">
+					 <div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;	<button type="submit" class="btn btn-primary">Submit</button>
                 </form>
 			  </p>
 			</div>
 	</main>
-<!--Login starts from here-->	
-		<login>
-			<form class="login-form">
-				<div class="card-header">Login</div>
-				<div class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-				</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control" id="exampleInputPassword1">
-					</div>
-						<!---<div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>-->	
-							&nbsp &nbsp
-							<button type="submit" class="btn btn-primary">Login</button>
-							<br><br>
-							</form>
-		</login>
 </div>
 </div>
 </body>
