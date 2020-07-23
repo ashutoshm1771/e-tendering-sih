@@ -135,8 +135,8 @@
 
 <!--Main starts from here-->	
 		<main>
-      <div class="jumbotron"><br>
-      <h1 class="display-4" id="header" align="center">Bidder Registration</h1> 
+      <div class="jumbotron">
+      <h1 class="display-4" id="header" align="center">Nodal Officer Registration</h1>
       <div align="right"><a class="btn btn-light btn-lg" href="newUserReg.jsp" role="button">Back</a></div>
       <br>
       <hr class="my-4">
@@ -147,14 +147,14 @@
                         <div class="col-sm">
                                  <div class="form-group">
                                      <label for="exampleInputName1">Full Name*</label>
-                                      <input type="text" class="form-control" name="bname" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Enter your full name" required>
+                                      <input type="text" class="form-control" name="ename" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Enter your full name" required>
                                       <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                   </div>
                          </div>
                          <div class="col-sm">
                                  <div class="form-group">
                                       <label for="exampleInputReg1">Aadhar number*</label>
-                                      <input type="text" class="form-control" name="badharno" id="exampleInputReg1"  aria-describedby="regHelp"  placeholder="Enter your Aadhar number" required>
+                                      <input type="text" class="form-control" name="eadharno" id="exampleInputReg1"  aria-describedby="regHelp"  placeholder="Enter your Aadhar number" required>
                                       <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                                  </div>
                          </div>
@@ -164,16 +164,16 @@
                   <div class="row">
                       <div class="col-sm">
                            <div class="form-group">
-                            <label for="exampleInputPoy1">Phone ISD Code*</label>
-                            <input type="number" class="form-control" name="bisdcode" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Phone ISD Code" required>
+                            <label for="exampleInputPoy1">Office Landline Number*</label>
+                            <input type="text" class="form-control" name="elandlineno" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Office Landline Number" required>
                              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small> -->
                             </div>
                        </div>
                        <div class="col-sm">              
                              <div class="form-group">
-                                    <label for="exampleInputPoy1">Phone Number*</label>
-                                    <input type="text" class="form-control" name="bphno" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Phone Number" required>
-                                     <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small>
+                                    <label for="exampleInputPoy1">Cell Number*</label>
+                                    <input type="text" class="form-control" name="ephno" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Phone Number" required>
+                                     <small id="emailHelp" class="form-text text-muted">We'll never share your personal contact number with anyone else.</small>
                               </div>
                        </div>
                     </div>
@@ -182,15 +182,15 @@
                   <div class="row">
                     <div class="col-sm">
                              <div class="form-group">
-                                   <label for="exampleInputmail1">Email Id*</label>
-                                   <input type="email" class="form-control" name="bemail" id="exampleInputDes1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="phoneHelp"  placeholder="Eg : johndoe@gmail.com" required>
+                                   <label for="exampleInputDes1">Email Id*</label>
+                                   <input type="email" class="form-control" name="eemail" id="exampleInputDes1" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" aria-describedby="phoneHelp"  placeholder="Eg : johndoe@gmail.com" required>
                                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                      </div>
                      <div class="col-sm">
                              <div class="form-group">
-                                   <label for="exampleInputContact1">Date of Birth*</label>
-                                   <input type="text" class="form-control" name="bdob" id="exampleInputDes1"  aria-describedby="phoneHelp"  placeholder="Format - DD/MM//YYYY" required>
+                                   <label for="exampleInputContact1">Govt ID Number*</label>
+                                   <input type="text" class="form-control" name="egid" id="exampleInputDes1"  aria-describedby="phoneHelp"  placeholder="Government Official ID Number" required>
                                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your mobile number with anyone else.</small> -->
                              </div>
                      </div>
@@ -200,8 +200,8 @@
               <div class="row">
                   <div class="col-sm">
                            <div class="form-group">
-                               <label for="exampleInputName1">PAN Card Number*</label>
-                                <input type="text" class="form-control" name="bpanno" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Permanent Account Number" required>
+                               <label for="exampleInputName1">Department*</label>
+                                <input type="text" class="form-control" name="edept" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Department Name" required>
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                    </div>
@@ -221,9 +221,9 @@
                         <div class="col-sm">
                              <div class="form-group">
                               <label for="exampleInputPoy1">State*</label>
-                                <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="bstate" class="form-control" required></select><br>
+                                <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="estate" class="form-control" required></select><br>
                                 <label for="exampleInputPoy1">City*</label>
-                                <select id ="state" name="bcity" class="form-control" required></select>
+                                <select id ="state" name="ecity" class="form-control" required></select>
                                 <script language="javascript">print_state("sts");</script>
                          </div>
                       </div>
@@ -234,14 +234,14 @@
                       <div class="col-sm">
                            <div class="form-group">
                             <label for="exampleInputPoy1">Pin Code*</label>
-                            <input type="number" class="form-control" name="bpincode" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Pin Code" required>
+                            <input type="number" class="form-control" name="epincode" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Pin Code" required>
                              <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small> -->
                             </div>
                        </div>
                        <div class="col-sm">              
                              <div class="form-group">
-                                    <label for="exampleInputPoy1">District*</label>
-                                    <input type="text" class="form-control" name="bdist" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="District" required>
+                                    <label for="exampleInputPoy1">Division*</label>
+                                    <input type="text" class="form-control" name="edivision" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Division" required>
                                      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small> -->
                               </div>
                        </div>
@@ -252,7 +252,7 @@
               <div class="container">
                 <div class="form-group">
                     <label for="exampleInputlink1">Login ID*</label>
-                    <input type="text" class="form-control" id="exampleInputlink1" name="bid" aria-describedby="linkHelp"  placeholder="Choose a Login ID">
+                    <input type="text" class="form-control" id="exampleInputlink1" name="eid" aria-describedby="linkHelp"  placeholder="Choose a Login ID">
                     <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                 </div>
               </div>
@@ -261,20 +261,20 @@
                         <div class="col-sm">
                                  <div class="form-group">
                                        <label for="exampleInputPasswrd1">Password*</label>
-                                       <input type="password" class="form-control" name="bpass" id="exampleInputPasswrd1"  placeholder="Enter your password" required>
+                                       <input type="password" class="form-control" name="epass" id="exampleInputPasswrd1"  placeholder="Enter your password" required>
                                   </div>
                          </div>
                          <div class="col-sm">
                                  <div class="form-group">
                                        <label for="exampleInputCPasswrd1">Confirm Password*</label>
-                                       <input type="password" class="form-control" name="bcpass" id="exampleInputCPasswrd1" placeholder="Enter your confirm password" required>
+                                       <input type="password" class="form-control" name="ecpass" id="exampleInputCPasswrd1" placeholder="Enter your confirm password" required>
                                  </div>
                          </div>
                       </div>
                  </div>
              <br>
                <div class="text-center">
-              <button type="submit" class="btn btn-primary">Register as a bidder</button>
+              <button type="submit" class="btn btn-primary">Register as a Nodal Officer</button>
               </div>
                 
             </form>

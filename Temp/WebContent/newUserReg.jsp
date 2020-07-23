@@ -134,34 +134,32 @@
 
 <!--Main starts from here-->	
 		<main>
-			<div class="card">
-				<div class="card-header">
-					Latest Tender
-				</div>
-					<div class="card-body">
-					<marquee direction="up"> <p class="card-text">With supporting text below as a natural lead-in to additional content.</p></marquee>
-					</div>
-			</div>
+			<div class="container">
+                <div class="jumbotron">
+                    <div class="text-center">
+                        <h1 class="display-4">Register as?</h1>
+                        </div>
+                        <hr class="my-4">
+                           <div class="container classic">
+                            <div class="row row-cols-2">
+                                <div class="col"> 
+                                          <a class="btn btn-dark btn-lg" href="bidderReg.jsp" role="button">Bidder</a>
+                                  </div>
+                        
+                        <div class="col">
+                            <div class="text-center">
+                           <a class="btn btn-dark btn-lg" href="empReg.jsp" role="button">Nodal Officer</a>
+                             </div>
+                        </div>
+                     </div>
+                 </div>
+                
+                  
+                   
+               </div>
+            </div>
 	</main>
 <!--Login starts from here-->	
-		<login>
-			<form class="login-form">
-				<div class="card-header">Login</div>
-				<div class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-				</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control" id="exampleInputPassword1">
-					</div>
-							<div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-							&nbsp; &nbsp; <a href="newUserReg.jsp">New User? Register Here!</a><br><br>&nbsp; &nbsp;
-							<button type="submit" class="btn btn-primary">Login</button>
-							<br><br>
-							</form>
-		</login>
 </div>
 </div>
 </body>
