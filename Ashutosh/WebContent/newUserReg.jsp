@@ -1,3 +1,4 @@
+<!-- Cookie Army -->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -20,6 +21,8 @@
 		.header{
 			display: grid;
 			grid-template: "sat headtitle mapindia";
+			grid-template-columns: auto auto auto;
+			grid-template-rows: auto auto auto auto auto;
 			height: 100%;
 			padding: 2px;
 			color:black;
@@ -57,7 +60,7 @@
 
 		aside{
 			background-color:#e8e8e8;
-			width: auto;
+			width:auto;
 		}
 		
 		login{
@@ -81,7 +84,14 @@
 			width:auto;
 		}
 
-		
+		.datass
+		{
+			display: inline-block;
+			color: white;
+			width: 100%;
+			background-color: maroon;
+		}
+
 		@media only screen and (max-width: 600px) 
 		{
 			body{
@@ -99,12 +109,16 @@
 	</style>
 </head>
 <body>
-	<div class="header">
-		<sat><img class="logo" src="images/satya3.png" alt="goi-logo"></sat>
-		<headtitle><img class="logo" src="images/etendering.png" alt="goi-logo"></headtitle>
-		<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
-	</div>
-<div class="main-body">
+<div class="header">
+	<sat><img class="logo" src="images/satya3.png" alt="goi-logo"></sat>
+	<headtitle><img class="logo" src="images/topban.png" alt="goi-logo"></headtitle>
+	<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
+</div>
+
+<div class="datass">
+28th APril,2020
+</div>
+	<div class="main-body">
 <!--Aside starts from here-->	
 	<aside>
 		<input type="button" class="links" value="Home" onclick="window.location.href = 'index.jsp';"></button><br>
@@ -120,48 +134,32 @@
 
 <!--Main starts from here-->	
 		<main>
-			<div class="jumbotron">
-                <h1 class="display-4">Tender By Classification</h1>
-                <p class="lead">Please select the Classification from the drop down box below for more tenders related to that particular Form Of Contract.</p>
-			  <hr class="my-4">
-			  <p class="lead">
-				<form method="POST" action="index.jsp">
-                    <div class="dropdown">
-                        <label for="exampleFormEventType1">Department*</label>
-    							<select class="form-control" name="sdept" id="exampleFormControlSelect2">
-
-      								<option>CSE</option>
-      								<option>ECE</option>
-      								<option>MECH</option>
-      								<option>CIVIL</option>
-      								<option>EEE</option>
-      								<option>IT</option>
-								</select>
-								<button type="submit" class="btn btn-primary">Submit</button>
-                      </div>                    
-                </form>
-			  </p>
-              </div>
+			<div class="container">
+                <div class="jumbotron">
+                    <div class="text-center">
+                        <h1 class="display-4">Register as?</h1>
+                        </div>
+                        <hr class="my-4">
+                           <div class="container classic">
+                            <div class="row row-cols-2">
+                                <div class="col"> 
+                                          <a class="btn btn-dark btn-lg" href="bidderReg.jsp" role="button">Bidder</a>
+                                  </div>
+                        
+                        <div class="col">
+                            <div class="text-center">
+                           <a class="btn btn-dark btn-lg" href="empReg.jsp" role="button">Nodal Officer</a>
+                             </div>
+                        </div>
+                     </div>
+                 </div>
+                
+                  
+                   
+               </div>
+            </div>
 	</main>
 <!--Login starts from here-->	
-		<login>
-			<form class="login-form">
-				<div class="card-header">Login</div>
-				<div class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-				</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control" id="exampleInputPassword1">
-					</div>
-							<div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-							&nbsp &nbsp
-							<button type="submit" class="btn btn-primary">Login</button>
-							<br><br>
-							</form>
-		</login>
 </div>
 </div>
 </body>

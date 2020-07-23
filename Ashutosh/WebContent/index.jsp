@@ -110,9 +110,9 @@
 </head>
 <body>
 <div class="header">
-	<sat><img class="logo" src="satya3.png" alt="goi-logo"></sat>
-	<headtitle><img class="logo" src="topban.png" alt="goi-logo"></headtitle>
-	<mapindia><img class="logo1" src="india2.png" alt="goi-logo"></mapindia>
+	<sat><img class="logo" src="images/satya3.png" alt="goi-logo"></sat>
+	<headtitle><img class="logo" src="images/topban.png" alt="goi-logo"></headtitle>
+	<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
 </div>
 
 <div class="datass">
@@ -127,6 +127,9 @@
 		<input type="button" class="links" value="Tender By Organisation" onclick="window.location.href = 'tenderByOrg.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Classification" onclick="window.location.href = 'tenderByClass.jsp';"></button><br>
 		<input type="button" class="links" value="Tenders in Archive" onclick="window.location.href = 'tendersInArchive.jsp';"></button><br>
+		<input type="button" class="links" value="Announcements" onclick="window.location.href = 'announcement.jsp';"></button><br>
+		<input type="button" class="links" value="Cancelled/Retendered" onclick="window.location.href = 'cancelled.jsp';"></button><br>
+    	<input type="button" class="links" value="Debarment List" onclick="window.location.href = 'debarment.jsp';"></button><br>
 	</aside>
 
 <!--Main starts from here-->	
@@ -154,7 +157,7 @@
 						<input type="password" class="form-control" id="exampleInputPassword1">
 					</div>
 							<div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-							&nbsp &nbsp
+							&nbsp; &nbsp; <a href="newUserReg.jsp">New User? Register Here!</a><br><br>&nbsp; &nbsp;
 							<button type="submit" class="btn btn-primary">Login</button>
 							<br><br>
 							</form>
