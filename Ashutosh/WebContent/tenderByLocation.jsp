@@ -124,7 +124,7 @@
 			  <p class="lead">Please type in the location, the search would give a list of tenders and related information based on the location entered.			</p>
 			  <hr class="my-4">
 			  <p class="lead">
-				<form method="POST" action="#">
+				<form method="POST" action="viewTenderByLocation.jsp">
                     <div class="form-group">
 						<label for="exampleInputName1">Location</label>
 						 <input type="text" class="form-control" name="location" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Enter the location" required>
