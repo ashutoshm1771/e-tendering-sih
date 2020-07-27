@@ -91,7 +91,34 @@
 			width: 100%;
 			background-color: maroon;
 		}
-
+		.home-container
+		{
+			display: flex;
+			width: 100%;
+			border: 2px solid black;
+		}
+		.home-container-1
+		{
+			display: flex;
+			width: 100%;
+			border: 2px dotted black;
+		}
+		.item-1
+		{
+			flex: 1;
+		}
+		.item-2
+		{
+			flex: 1;
+		}
+		.item-3
+		{
+			flex: 1;
+		}
+		.item-4
+		{
+			flex: 1;
+		}
 		@media only screen and (max-width: 600px) 
 		{
 			body{
@@ -106,6 +133,7 @@
 			grid-gap:20px;
 		}
 		}
+		
 	</style>
 </head>
 <body>
@@ -138,8 +166,36 @@
 				<div class="card-header">
 					Latest Tender
 				</div>
+				<div class="home-container">
+					<div class="flex item-1"> Tender Title</div>
+					<div class="flex item-2"> Reference No</div>
+					<div class="flex item-3"> Closing Date</div>
+					<div class="flex item-4"> Bid Opening Date</div>
+				</div>
+				
 					<div class="card-body">
-					<marquee direction="up"> <p class="card-text">With supporting text below as a natural lead-in to additional content.</p></marquee>
+					<marquee direction="up"> <p class="card-text">
+						<%	
+							Class.forName("com.mysql.jdbc.Driver");
+							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/---","root","");
+							Statement st = con.createStatement();
+							ResultSet rs;
+							rs = st.executeQuery("select  from  ");
+							while(rs.next())
+							{
+							out.print
+							(
+								"<div class="home-container-1">
+									<div class="flex item-1">"+rs.getString(1)+"</div>
+									<div class="flex item-2">"+rs.getString(2)+"</div>
+									<div class="flex item-3">"+rs.getString(3)+"</div>
+									<div class="flex item-4">"+rs.getString(4)+"</div>
+								</div>"
+							);
+							}
+							out.print("</tbody>");
+						%>
+					</p></marquee>
 					</div>
 			</div>
 	</main>
