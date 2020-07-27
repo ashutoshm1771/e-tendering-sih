@@ -141,7 +141,7 @@
       <div align="right"><a class="btn btn-light btn-lg" href="index.jsp" role="button">Back</a></div>
       <br>
       <hr class="my-4">
-            <form method="post" action="studententerdb.jsp" id="CorporateTendererForm" autocomplete="off">
+            <form method="post" action="___.jsp" id="CorporateTendererForm" autocomplete="off">
 				<div class="jumbotron">
 					<div class="container">
 						<div class="row">
@@ -682,9 +682,9 @@
 									<div class="col-sm">
 										 <div class="form-group">
 										  <label for="exampleInputPoy1">State*</label>
-											<select onchange="print_city('state', this.selectedIndex);" id="sts" name ="cstate" class="form-control" required></select><br>
+											<select onchange="print_city('state', this.selectedIndex);" id="sts" name ="cstate" class="form-control" ></select><br>
 											<label for="exampleInputPoy1">City*</label>
-											<select id ="state" name="ccity" class="form-control" required></select>
+											<select id ="state" name="ccity" class="form-control" ></select>
 											<script language="javascript">print_state("sts");</script>
 									 </div>
 								  </div>
@@ -695,14 +695,14 @@
 								  <div class="col-sm">
 									   <div class="form-group">
 										<label for="exampleInputPoy1">Pin Code*</label>
-										<input type="number" class="form-control" name="cpincode" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Pin Code" required>
+										<input type="number" class="form-control" name="cpincode" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Pin Code" >
 										 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small> -->
 										</div>
 								   </div>
 								   <div class="col-sm">              
 										 <div class="form-group">
 												<label for="exampleInputPoy1">District*</label>
-												<input type="text" class="form-control" name="cdist" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="District" required>
+												<input type="text" class="form-control" name="cdist" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="District" >
 												 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small> -->
 										  </div>
 								   </div>
@@ -929,7 +929,7 @@
 									 <div class="col-sm">              
 										   <div class="form-group">
 												  <label for="exampleInputPoy1">State / City*</label>
-												  <input type="text" class="form-control" name="ccity" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Enter the City or State" required>
+												  <input type="text" class="form-control" name="ccity" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Enter the City or State" >
 												   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small> -->
 											</div>
 									 </div>
@@ -938,7 +938,7 @@
 							 <div class="container">
              					<div class="form-group">
 									   <label for="exampleInputClg1">Postal Code*</label>
-									   <input type="number" class="form-control" name="cpincode" id="exampleInputClg1"  aria-describedby="colHelp"  placeholder="Enter your postal code" required>
+									   <input type="number" class="form-control" name="cpincode" id="exampleInputClg1"  aria-describedby="colHelp"  placeholder="Enter your postal code" >
 									   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
 								</div>
 						  </div>
@@ -947,7 +947,7 @@
 							<div class="container">
              					<div class="form-group">
 									   <label for="exampleInputClg1">PAN / TAN Number*</label>
-									   <input type="text" class="form-control" name="cpanno" id="exampleInputClg1"  aria-describedby="colHelp"  placeholder="PAN/TAN number must have 10 characters. For eg: AESTG2458A" required>
+									   <input type="text" class="form-control" name="cpanno" id="exampleInputClg1"  aria-describedby="colHelp"  placeholder="PAN/TAN number must have 10 characters. For eg: AESTG2458A" >
 									   <small id="emailHelp" class="form-text text-muted">For Bidders who do not have PAN/TAN number may enter TEMPZ9999Z as the PAN/TAN number.</small> 
 								</div>
 						  </div> 
