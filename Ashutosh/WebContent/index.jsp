@@ -1,4 +1,6 @@
 <!-- Cookie Army -->
+<%@ page import = "java.sql.*" %>
+
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -40,7 +42,6 @@
 			height: 100px;
 			float:right;
 		}
-
 		.main-body{
 			margin-top:10px;
 			display: grid;
@@ -57,7 +58,6 @@
 			margin: 8px 0;
 			box-sizing: border-box;
 			}
-
 		aside{
 			background-color:#e8e8e8;
 			width:auto;
@@ -83,7 +83,6 @@
 			margin-left: 5px;
 			width:auto;
 		}
-
 		.datass
 		{
 			display: inline-block;
@@ -177,23 +176,23 @@
 					<marquee direction="up"> <p class="card-text">
 						<%	
 							Class.forName("com.mysql.jdbc.Driver");
-							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/---","root","");
+							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
 							Statement st = con.createStatement();
 							ResultSet rs;
-							rs = st.executeQuery("select  from  ");
+							rs = st.executeQuery("select * from tenderdetails ");
 							while(rs.next())
 							{
 							out.print
 							(
-								"<div class="home-container-1">
-									<div class="flex item-1">"+rs.getString(1)+"</div>
-									<div class="flex item-2">"+rs.getString(2)+"</div>
-									<div class="flex item-3">"+rs.getString(3)+"</div>
-									<div class="flex item-4">"+rs.getString(4)+"</div>
-								</div>"
-							);
+									"<div class='home-container-1'>"+
+					                        "<div class='flex item-1'>"+rs.getString(1)+"</div>"+
+					                        "<div class='flex item-2'>"+rs.getString(2)+"</div>"+
+					                        "<div class='flex item-3'>"+rs.getString(3)+"</div>"+
+					                        "<div class='flex item-4'>"+rs.getString(4)+"</div>"+
+					                    "</div>"
+								);
 							}
-							out.print("</tbody>");
+							
 						%>
 					</p></marquee>
 					</div>
