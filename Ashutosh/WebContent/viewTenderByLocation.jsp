@@ -107,7 +107,14 @@
 		{
 			flex: 1;
 		}
-		
+		.item-5
+		{
+			flex: 1;
+		}
+		.item-6
+		{
+			flex: 1;
+		}
 		@media only screen and (max-width: 600px) 
 		{
 			body{
@@ -166,12 +173,13 @@
                         <div class="flex item-1"> e-Published Date</div>
                         <div class="flex item-3"> Closing Date</div>
 						<div class="flex item-4"> Bid Opening Date</div>
-						<div class="flex item-2"> Reference No</div>
-						<div class="flex item-2"> Organisation Chain</div>
+						<div class="flex item-5"> Reference No</div>
+						<div class="flex item-6"> Organisation Chain</div>
                     </div>
                     
                         <div class="card-body">
-                            while(rs.next())
+							<%
+							while(rs.next())
                             {
                                 out.print
                                 (
@@ -180,11 +188,12 @@
 										"<div class='flex item-2'>"+rs.getString(2)+"</div>"+
 										"<div class='flex item-3'>"+rs.getString(3)+"</div>"+
 										"<div class='flex item-4'>"+rs.getString(4)+"</div>"+
-										"<div class='flex item-4'>"+rs.getString(5)+"</div>"+
-										"<div class='flex item-4'>"+rs.getString(6)+"</div>"+
+										"<div class='flex item-5'>"+rs.getString(5)+"</div>"+
+										"<div class='flex item-6'>"+rs.getString(6)+"</div>"+
 									"</div>"
                                 );
-                            }
+							}
+							%>
                         </div>
                 </div>
 			</div>
