@@ -25,7 +25,6 @@
 			grid-template: "sat headtitle mapindia";
 			grid-template-columns: auto auto auto;
 			grid-template-rows: auto auto auto auto auto;
-            background-color: blueviolet;
 			height: 100%;
 			padding: 2px;
 			color:black;
@@ -46,7 +45,6 @@
 		.main-body{
 			margin-top:10px;
 			display: grid;
-            background-color: black;
 			grid-template:"aside main login";
 			grid-gap:20px;
 		}
@@ -143,25 +141,56 @@
 	<headtitle><img class="logo" src="digilockerLogo.png" alt="goi-logo"></headtitle>
 	<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
 </div>
-	<div class="main-body">
-        <center>
-			<form class="login-form" method="POST" action="--.jsp">
-				<div class="card-header">Login</div>
-				<div class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-				</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control" id="exampleInputPassword1">
-					</div>
-							<div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-							&nbsp; &nbsp; <a href="newUserReg.jsp">New User? Register Here!</a><br><br>&nbsp; &nbsp;
-							<button type="submit" class="btn btn-primary">Login</button>
-							<br><br>
-            </form>
-        </center>
+    
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-4" id="header"align="center">Digilocker User Registration</h1>
+        <br>
+        <div align="right"><a class="btn btn-light btn-lg" href="index.jsp" role="button">Back</a></div>
+        <br>
+        <hr class="my-4">
+        <br>
+        <form method="post" action="---.jsp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                             <div class="form-group">
+                                 <label for="exampleInputName1">Full Name*</label>
+                                  <input type="text" class="form-control" name="dname" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Enter your full name" required>
+                                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                              </div>
+                     </div>
+                     <div class="col-sm">
+                             <div class="form-group">
+                                  <label for="exampleInputReg1">User ID*</label>
+                                  <input type="text" class="form-control" name="did" id="exampleInputReg1"  aria-describedby="regHelp"  placeholder="Choose your User ID " required>
+                                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                             </div>
+                     </div>
+                  </div>
+             </div>
+             <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                             <div class="form-group">
+                                   <label for="exampleInputPasswrd1">Password*</label>
+                                   <input type="password" class="form-control" name="spass" id="exampleInputPasswrd1"  placeholder="Enter your password" required>
+                              </div>
+                     </div>
+                     <div class="col-sm">
+                             <div class="form-group">
+                                   <label for="exampleInputCPasswrd1">Confirm Password*</label>
+                                   <input type="password" class="form-control" name="cpass" id="exampleInputCPasswrd1" placeholder="Confirm password" required>
+                             </div>
+                     </div>
+                  </div>
+             </div>
+             <br>
+           <div class="text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
     </div>
+</div>
 </body>
 </html>

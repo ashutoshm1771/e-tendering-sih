@@ -197,6 +197,42 @@
 					</p></marquee>
 					</div>
 			</div>
+			<div class="card">
+				<div class="card-header">
+					Latest Corrigendums
+				</div>
+				<div class="home-container">
+					<div class="flex item-1"> Tender Title</div>
+					<div class="flex item-2"> Reference No</div>
+					<div class="flex item-3"> Closing Date</div>
+					<div class="flex item-4"> Bid Opening Date</div>
+				</div>
+				
+					<div class="card-body">
+					<marquee direction="up" onmouseover="this.stop() ;" onmouseout="this.start() ;"> <p class="card-text">
+						<%	
+							Class.forName("com.mysql.jdbc.Driver");
+							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
+							Statement st = con.createStatement();
+							ResultSet rs;
+							rs = st.executeQuery("select * from tenderdetails where tenderStatus="corrected"");
+							while(rs.next())
+							{
+							out.print
+							(
+									"<div class='home-container-1'>"+
+					                        "<div class='flex item-1'>"+rs.getString(1)+"</div>"+
+					                        "<div class='flex item-2'>"+rs.getString(2)+"</div>"+
+					                        "<div class='flex item-3'>"+rs.getString(3)+"</div>"+
+					                        "<div class='flex item-4'>"+rs.getString(4)+"</div>"+
+					                    "</div>"
+								);
+							}
+							
+						%>
+					</p></marquee>
+					</div>
+			</div>
 	</main>
 <!--Login starts from here-->	
 		<login>

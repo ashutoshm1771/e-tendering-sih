@@ -10,9 +10,9 @@
 		// Popup window code
 		function newPopup(url) {
 			popupWindow = window.open(
-				url,'popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
+				url,'popUpWindow','height=800,width=1000,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
 		}
 		</script>
-		<p><a href="JavaScript:newPopup('/E-Tender/WebContent/digilocker/index.jsp');">Open a popup window</a></p>
+		<p><a href="JavaScript:newPopup('/E-Tender/WebContent/digilocker/index.jsp');">Submit Documents through digilocker</a></p>
 </body>
 </html>

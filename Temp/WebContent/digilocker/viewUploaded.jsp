@@ -1,6 +1,3 @@
-<!-- Cookie Army -->
-<%@ page import = "java.sql.*" %>
-
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -23,9 +20,6 @@
 		.header{
 			display: grid;
 			grid-template: "sat headtitle mapindia";
-			grid-template-columns: auto auto auto;
-			grid-template-rows: auto auto auto auto auto;
-            background-color: blueviolet;
 			height: 100%;
 			padding: 2px;
 			color:black;
@@ -43,10 +37,10 @@
 			height: 100px;
 			float:right;
 		}
+
 		.main-body{
 			margin-top:10px;
 			display: grid;
-            background-color: black;
 			grid-template:"aside main login";
 			grid-gap:20px;
 		}
@@ -60,9 +54,9 @@
 			margin: 8px 0;
 			box-sizing: border-box;
 			}
+
 		aside{
 			background-color:#e8e8e8;
-			width:auto;
 		}
 		
 		login{
@@ -82,17 +76,10 @@
 			width: 	180PX;
 		}
 		.g-recaptcha{
-			margin-left: 5px;
+			margin-left: 20px;
 			width:auto;
 		}
-		.datass
-		{
-			display: inline-block;
-			color: white;
-			width: 100%;
-			background-color: maroon;
-		}
-		.home-container
+        .home-container
 		{
 			display: flex;
 			width: 100%;
@@ -105,18 +92,6 @@
 			border: 2px dotted black;
 		}
 		.item-1
-		{
-			flex: 1;
-		}
-		.item-2
-		{
-			flex: 1;
-		}
-		.item-3
-		{
-			flex: 1;
-		}
-		.item-4
 		{
 			flex: 1;
 		}
@@ -134,34 +109,64 @@
 			grid-gap:20px;
 		}
 		}
-		
 	</style>
 </head>
 <body>
-<div class="header">
-	<sat><img class="logo" src="images/satya3.png" alt="goi-logo"></sat>
-	<headtitle><img class="logo" src="digilockerLogo.png" alt="goi-logo"></headtitle>
-	<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
+	<div class="header">
+		<sat><img class="logo" src="images/satya3.png" alt="goi-logo"></sat>
+		<headtitle><img class="logo" src="digilockerLogo.png" alt="goi-logo"></headtitle>
+		<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
+	</div>
+<div class="main-body">
+
+<!--Main starts from here-->	
+	<main>
+        <%
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/---","root","");
+            Statement st = con.createStatement();
+            String userid=(String)session.getAttribute("did");
+            Statement st = con.createStatement();
+			ResultSet rs;
+			rs = st.executeQuery("select  from  ");
+        %>
+			<div class="jumbotron">
+                <h1 class="display-4">Your Uploaded Documents</h1><br>
+                <div align="right"><a class="btn btn-light btn-lg" href="digiPortal.jsp" role="button">Back</a></div>
+                <br>
+                <hr class="my-4">
+                <div class="card">
+                    <div class="home-container">
+						<div class="flex item-2"> Document Name</div>
+                    </div>
+					<form method="post" action="___.jsp">
+                        <div class="card-body">
+							<%
+							while(rs.next())
+                            {
+                                out.print
+                                (
+                                    "<div class='home-container-1'>"+
+										"<div align='left'><input type='checkbox' name='yes' class='form-check-input' id='exampleCheck1'></div><div align='left'>"+rs.getString(1)+"</div>"+
+									"</div>"
+                                );
+							}
+							%>
+							<div class='home-container-1'>
+								<div class='flex item-1'>
+									<div align='left'><input type='checkbox' name='yes' class='form-check-input' id='exampleCheck1'></div><div align='left'>podey</div>
+								</div>
+							</div>
+						</div>
+							<div class="text-center">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div>
+							</form>
+                        </div>
+                </div>
+			</div>
+	</main>
 </div>
-	<div class="main-body">
-        <center>
-			<form class="login-form" method="POST" action="--.jsp">
-				<div class="card-header">Login</div>
-				<div class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-				</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control" id="exampleInputPassword1">
-					</div>
-							<div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-							&nbsp; &nbsp; <a href="newUserReg.jsp">New User? Register Here!</a><br><br>&nbsp; &nbsp;
-							<button type="submit" class="btn btn-primary">Login</button>
-							<br><br>
-            </form>
-        </center>
-    </div>
+</div>
 </body>
 </html>
