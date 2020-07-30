@@ -173,6 +173,57 @@
                                 </div>
                          </div>
                       </div>
+				 </div>
+				 <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                             <div class="form-group">
+                              <label for="exampleInputPoy1">Bid Opening Date*</label>
+                              <input type="number" class="form-control" name="bOpenDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Starting Date of the Bid Process" required>
+                               <small id="emailHelp" class="form-text text-muted">Format - DD/MM/YYYY </small>
+                              </div>
+                         </div>
+                         <div class="col-sm">              
+                               <div class="form-group">
+                                      <label for="exampleInputPoy1">Expected Cost*</label>
+                                      <input type="text" class="form-control" name="tcost" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Expected Cost of the Tender" required>
+                                       <small id="emailHelp" class="form-text text-muted">Currency -INR </small> 
+                                </div>
+                         </div>
+                      </div>
+				 </div>
+				 <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                                 <div class="form-group">
+									<label for="exampleInputPoy1">Class*</label>
+									<select class="form-control" name="tclass" id="exampleFormControlSelect2">
+											<option value="1">Piece-work</option>
+											<option value="2">Lump-sum</option>
+											<option value="3">Multi-stage</option>
+											<option value="4">Supply</option>
+											<option value="5">Fixed-rate</option>
+											<option value="6">Turn-key</option>
+											<option value="7">Buy</option>
+											<option value="8">Works</option>
+											<option value="9">EPC Contract</option>
+											<option value="10">QCBS</option>
+											<option value="11">Tender cum Auction</option>
+											<option value="12">Sale</option>
+											<option value="13">Percentage</option>
+											<option value="14">PPP-BoT-Annuity</option>
+											<option value="15">PPP-BoT-Toll</option>
+											<option value="16">PPP-BoT-HAM</option>
+											<option value="17">PPP-BoT-ToT</option>
+											<option value="18">Item Rate</option>
+											<option value="19">EOI</option>
+											<option value="20">Empanelment</option>
+											<option value="21">PPP-DBFOT</option>
+											<option value="22">PPP-DBFO</option>
+									</select>
+                                  </div>
+                         </div>
+                      </div>
                  </div>
                  <hr class="my-4">
         <h3 class="display-6" id="header" align="left">Tender Location</h3><br>
