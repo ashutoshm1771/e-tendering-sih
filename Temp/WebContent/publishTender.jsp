@@ -155,6 +155,24 @@
                                 </div>
                          </div>
                       </div>
+				 </div>
+				 <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                             <div class="form-group">
+                              <label for="exampleFormControlFile1">Tender Document*</label>
+                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                               <small id="emailHelp" class="form-text text-muted">Format - .pdf</small>
+                              </div>
+                         </div>
+                         <div class="col-sm">              
+                               <div class="form-group">
+                                      <label for="exampleInputPoy1">Company Name*</label>
+                                      <input type="text" class="form-control" name="tcomp" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Company Name (complete)" required>
+                                       <small id="emailHelp" class="form-text text-muted">The Company that released the Tender.</small> 
+                                </div>
+                         </div>
+                      </div>
                  </div>
                  <hr class="my-4">
         <h3 class="display-6" id="header" align="left">Tender Location</h3><br>
