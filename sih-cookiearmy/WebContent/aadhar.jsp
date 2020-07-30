@@ -111,9 +111,9 @@
 </head>
 <body>
 <div class="header">
-	<sat><img class="logo" src="satya3.png" alt="goi-logo"></sat>
-	<headtitle><img class="logo" src="topban.png" alt="goi-logo"></headtitle>
-	<mapindia><img class="logo1" src="india2.png" alt="goi-logo"></mapindia>
+	<sat><img class="logo" src="images/satya3.png" alt="goi-logo"></sat>
+	<headtitle><img class="logo" src="images/topban.png" alt="goi-logo"></headtitle>
+	<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
 </div>
 	
       <div class="jumbotron"><br>
@@ -124,10 +124,11 @@
                 <div class="container">
                 <div class="row">
                         <div class="col-sm">
-                                 <div class="form-group" align="left">
-                                     <h6>Enter AADHAR No:*</h6><input type="number"  name="aadhar" id="exampleInputPoy1" aria-describedby="poyHelp"  placeholder="12-digit no." required>
-                                     
-                                      <div class="text-center" align="left">
+                                 <div class="form-group" align="center">
+									 <h4>Enter AADHAR No:*</h4><br>
+									 <input type="text"  name="aadhar" id="exampleInputPoy1" aria-describedby="poyHelp"  placeholder="12-digit no." required>
+                                     <br> <br>
+                                      <div class="text-center" align="center">
               <button type="submit" class="btn btn-primary">SUBMIT</button>
               </div>
                                 </div>
