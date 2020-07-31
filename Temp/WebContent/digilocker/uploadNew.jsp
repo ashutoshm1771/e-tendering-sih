@@ -150,7 +150,7 @@
         <br>
         <hr class="my-4">
         <br>
-        <form method="post" action="---.jsp">
+        <form method="post" action="uploadNew2.jsp">
             <div class="container">
                 <div class="row">
                      <div class="col-sm">
@@ -167,7 +167,7 @@
                     <div class="col-sm">
                              <div class="form-group">
                                 <label for="exampleFormControlFile1">Upload the Document ( .pdf format) *</label>
-                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                <input type="file" name="doc" accept=".pdf" class="form-control-file" id="exampleFormControlFile1">
                               </div>
                      </div>
                   </div>

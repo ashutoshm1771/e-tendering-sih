@@ -1,6 +1,8 @@
 <!-- Cookie Army -->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@page  import ="java.io.BufferedReader,java.util.Random,java.io.InputStreamReader,java.net.HttpURLConnection,java.net.URL,java.io.*,java.util.Scanner"
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +13,13 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="js/cities.js"></script>
+
+<script>
+function myFunction() {
+  alert("The form was submitted");
+}
+</script>
+
 <script type="text/javascript">
 	var onloadCallback = function() {
 	  grecaptcha.render('html_element', {
@@ -41,7 +50,6 @@
 			height: 100px;
 			float:right;
 		}
-
 		.main-body{
 			margin-top:10px;
 			display: grid;
@@ -58,7 +66,6 @@
 			margin: 8px 0;
 			box-sizing: border-box;
 			}
-
 		aside{
 			background-color:#e8e8e8;
 			width:auto;
@@ -84,7 +91,6 @@
 			margin-left: 5px;
 			width:auto;
 		}
-
 		.datass
 		{
 			display: inline-block;
@@ -92,7 +98,6 @@
 			width: 100%;
 			background-color: maroon;
 		}
-
 		@media only screen and (max-width: 600px) 
 		{
 			body{
@@ -111,9 +116,9 @@
 </head>
 <body>
 <div class="header">
-	<sat><img class="logo" src="images/satya3.png" alt="goi-logo"></sat>
-	<headtitle><img class="logo" src="images/topban.png" alt="goi-logo"></headtitle>
-	<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
+	<sat><img class="logo" src="satya3.png" alt="goi-logo"></sat>
+	<headtitle><img class="logo" src="topban.png" alt="goi-logo"></headtitle>
+	<mapindia><img class="logo1" src="india2.png" alt="goi-logo"></mapindia>
 </div>
 
 <div class="datass">
@@ -141,7 +146,7 @@
       <br>
       <hr class="my-4">
       <h3 class="display-6" id="header" align="left">Personal Information</h3><br>
-            <form method="post" action="studententerdb.jsp">
+            <form method="post" action="bidderReg2.jsp">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm">
@@ -172,8 +177,11 @@
                        <div class="col-sm">              
                              <div class="form-group">
                                     <label for="exampleInputPoy1">Phone Number*</label>
+                                    <div class="form-row">
                                     <input type="text" class="form-control" name="bphno" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Phone Number" required>
                                      <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small>
+                                    </div>
+                       
                               </div>
                        </div>
                     </div>
@@ -188,32 +196,16 @@
                             </div>
                      </div>
                      <div class="col-sm">
-                             <div class="form-group">
-                                   <label for="exampleInputContact1">Date of Birth*</label>
-                                   <input type="text" class="form-control" name="bdob" id="exampleInputDes1"  aria-describedby="phoneHelp"  placeholder="Format - DD/MM//YYYY" required>
-                                   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your mobile number with anyone else.</small> -->
-                             </div>
-                     </div>
-                  </div>
-             </div>
-             <div class="container">
-              <div class="row">
-                  <div class="col-sm">
                            <div class="form-group">
                                <label for="exampleInputName1">PAN Card Number*</label>
                                 <input type="text" class="form-control" name="bpanno" id="exampleInputName1" aria-describedby="nameHelp"  placeholder="Permanent Account Number" required>
                                 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                             </div>
                    </div>
-                   <div class="col-sm">
-                      <div class="form-group">
-                          <label for="exampleFormControlFile1">Submit Your Signature ( .jpg or .png format) *</label>
-                          <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                      </div>
-                   </div> 
-                   
-                </div>
-           </div>
+              
+                  </div>
+             </div>
+            
              <hr class="my-4">
              <h3 class="display-6" id="header" align="left">Address</h3><br>
               <div class="container">
@@ -221,9 +213,47 @@
                         <div class="col-sm">
                              <div class="form-group">
                               <label for="exampleInputPoy1">State*</label>
-                                <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="bstate" class="form-control" required></select><br>
-                                <label for="exampleInputPoy1">City*</label>
-                                <select id ="state" name="bcity" class="form-control" required></select>
+                                <select class="form-control" name="bstate" id="exampleFormControlSelect2">
+                                <option value="0">-Select-</option>
+                                <option value="1">Andaman and Nicobar (UT)</option>
+                                <option value="2">Andhra Pradesh</option>
+                                <option value="3">Andhra Pradesh (Before Division)</option>
+                                <option value="4">Arunachal Pradesh</option>
+                                <option value="5">Assam</option>
+                                <option value="6">Bihar</option>
+                                <option value="7">Chandigarh (UT)</option>
+                                <option value="8">Chhattishgarh</option>
+                                <option value="9">Dadra and Nagar Haveli (UT)</option>
+                                <option value="10">Daman and Diu (UT)</option>
+                                <option value="11">Delhi</option>
+                                <option value="12">Goa</option>
+                                <option value="13">Gujarat</option>
+                                <option value="14">Haryana</option>
+                                <option value="15">Himachal Pradesh</option>
+                                <option value="16">Jammu and Kashmir</option>
+                                <option value="17">Jharkhand</option>
+                                <option value="18">Karnataka</option>
+                                <option value="19">Kerala</option>
+                                <option value="20">Ladakh (UT)</option>
+                                <option value="21">Lakshadweep (UT)</option>
+                                <option value="22">Madhya Pradesh</option>
+                                <option value="23">Maharashtra</option>
+                                <option value="24">Manipur</option>
+                                <option value="25">Meghalaya</option>
+                                <option value="26">Mizoram</option>
+                                <option value="27">Nagaland</option>
+                                <option value="28">Orissa</option>
+                                <option value="29">Pondicherry (UT)</option>
+                                <option value="30">Punjab</option>
+                                <option value="31">Rajasthan</option>
+                                <option value="32">Sikkim</option>
+                                <option value="33">Tamil Nadu</option>
+                                <option value="34">Telangana</option>
+                                <option value="35">Tripura</option>
+                                <option value="36">Uttaranchal</option>
+                                <option value="37">Uttar Pradesh</option>
+                                <option value="38">West Bengal</option>
+                            </select>
                                 <script language="javascript">print_state("sts");</script>
                          </div>
                       </div>

@@ -726,16 +726,16 @@ ul {
 	width: 195px;
 	margin: 10px;
 	}
-	
+
 #menu4 li a {
-  
+
 	FONT-WEIGHT: bold;
 	FONT-SIZE: 10px;
 	FONT-FAMILY: tahoma;
     Height: 30px;
 	text-decoration: none;
 	}
-	
+
 #menu4 li a:link, #menu4 li a:visited {
 	color: #000000;
 	display: block;
@@ -745,7 +745,7 @@ ul {
 	background: url("../images/menu4.png");
 	padding: 10px 0 0 30px;
 	}
-	
+
 #menu4 li a:hover {
 	color: #8E4A01;
 	FONT-WEIGHT: bold;
@@ -1039,11 +1039,11 @@ img {
 
 /*- Menu Tabs --------------------------- */
 
-	
+
 	padding:0 0 0 5px;
 		text-decoration:none;
 	}
-	
+
 	#tabsJ a span {
 		float:left;
 		display:block;
@@ -1051,7 +1051,7 @@ img {
 		padding:5px 15px 4px 6px;
 		color:#24618E;
 	}
-	
+
 	/* Commented Backslash Hack hides rule from IE5-Mac \*/
 	#tabsJ a span {float:none;}
 	/* End IE5-Mac hack */
@@ -1118,22 +1118,22 @@ img {
 		padding:3px;
 		border-bottom:1px solid #ACAEB0;
 	}
-	
+
 	.policy_data{
 		background-color:#FFFFFF;
 		font-family:"Trebuchet MS";
 		color:#121212;
 		padding:4px;
 	}
-	
+
 	.footer td{
 		font-family:tahoma;
 		font-size:10px;
 		color:#FFFFFF;
 		padding:2px;
 	}
-	
-		
+
+
 	.notice{
 		padding:4px;
 		background-color:#FFFFFF;
@@ -1143,7 +1143,7 @@ img {
 		font-size:11px;
 		font-weight:bold;
 	}
-	
+
 	.notice_strip{
 		background-color:#7D080D;
 		padding:4px;
@@ -1152,14 +1152,14 @@ img {
 		font-size:10px;
 		color:#FFFFFF;
 	}
-	
+
 	a.notice_link{
 		font-family:verdana;
 		font-size:10px;
 		color:#FFFFFF;
 		text-decoration:none;
 	}
-	
+
 	a.notice_link:hover{
 		font-family:verdana;
 		font-size:10px;
@@ -1190,7 +1190,7 @@ img {
 		color:#101010;
 		text-decoration:none;
 	}
-	
+
 
 /* Table 1 Style */
 
@@ -1314,7 +1314,7 @@ a.customButton_link:hover{
 	text-decoration:none;
 }
 .login-box {
-	
+
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 5px 50px rgba(0, 0, 0, 0.4);
@@ -1327,7 +1327,7 @@ a.customButton_link:hover{
     margin-top: 30px;
 }
 .box-header {
-	
+
 	background-color: #d37029;
     border-radius: 5px 5px 0 0;
     color: white;
@@ -1335,7 +1335,7 @@ a.customButton_link:hover{
     margin-top: 0;
 }
 .login_password{
-	
+
 	border: 1px solid #ccc;
     border-radius: 2px;
     color: #541d00;
@@ -1345,7 +1345,7 @@ a.customButton_link:hover{
     width: 85%;
 }
 .login_captcha{
-	
+
 	border: 1px solid #ccc;
     border-radius: 2px;
     color: #541d00;
@@ -1355,7 +1355,7 @@ a.customButton_link:hover{
     width: 85%;
 }
 .login_captcha_img{
-	
+
     margin-top: 15px;
     padding: 6px;
 }
@@ -1371,4 +1371,4 @@ a.customButton_link:hover{
 	TEXT-DECORATION: none;
 	MARGIN-TOP:20PX;
 	TEXT-ALIGN:center;
-}
+} 

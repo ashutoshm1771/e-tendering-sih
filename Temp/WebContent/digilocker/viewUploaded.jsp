@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+<%@ page import="java.sql.*" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -37,7 +39,6 @@
 			height: 100px;
 			float:right;
 		}
-
 		.main-body{
 			margin-top:10px;
 			display: grid;
@@ -54,7 +55,6 @@
 			margin: 8px 0;
 			box-sizing: border-box;
 			}
-
 		aside{
 			background-color:#e8e8e8;
 		}
@@ -123,12 +123,11 @@
 	<main>
         <%
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/---","root","");
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
             Statement st = con.createStatement();
             String userid=(String)session.getAttribute("did");
-            Statement st = con.createStatement();
 			ResultSet rs;
-			rs = st.executeQuery("select  from  ");
+			rs = st.executeQuery("select doc from digilocker where userid=\""+session.getAttribute("username1")+"\" ");
         %>
 			<div class="jumbotron">
                 <h1 class="display-4">Your Uploaded Documents</h1><br>
@@ -139,7 +138,7 @@
                     <div class="home-container">
 						<div class="flex item-2"> Document Name</div>
                     </div>
-					<form method="post" action="___.jsp">
+					<form method="post" action="submitDigi.jsp">
                         <div class="card-body">
 							<%
 							while(rs.next())
@@ -152,11 +151,11 @@
                                 );
 							}
 							%>
-							<div class='home-container-1'>
+						<!-- 	<div class='home-container-1'>
 								<div class='flex item-1'>
 									<div align='left'><input type='checkbox' name='yes' class='form-check-input' id='exampleCheck1'></div><div align='left'>podey</div>
 								</div>
-							</div>
+							</div>  -->
 						</div>
 							<div class="text-center">
 								<button type="submit" class="btn btn-primary">Submit</button>

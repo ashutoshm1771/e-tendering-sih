@@ -15,10 +15,10 @@ void send(final String from,final String password,String to,String sub,String ms
 //Get properties object
 Properties props = new Properties();
 props.put("mail.smtp.host", "smtp.gmail.com");
-props.put("mail.smtp.socketFactory.port", "465");
+props.put("mail.smtp.socketFactory.port", "587");
 props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
 props.put("mail.smtp.auth", "true");
-props.put("mail.smtp.port", "465");
+props.put("mail.smtp.port", "587");
 //get Session
 Session session = Session.getInstance(props,
 new javax.mail.Authenticator() {
@@ -45,9 +45,14 @@ System.out.println("message sent successfully");
     return str1;
 }*/
 %>
-<%  String randno = (String)session.getAttribute("otp");
+<%
+    Random rand = new Random();
+	int randint = rand.nextInt();
+	
+    String randno = Integer.toString(randint);
+    		//(String)session.getAttribute("otp");
 	String userid=(String)session.getAttribute("uid");
-    send("emailAddress","password--",userid,"OTP verfication","your OTP is : "+randno);
+    send("siddanitulasi@gmail.com","tulasi@11",userid,"OTP verfication","your OTP is : "+randno);
     response.sendRedirect("otpenter.jsp");%>
     </body>
 </html>

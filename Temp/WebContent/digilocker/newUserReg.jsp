@@ -150,7 +150,7 @@
         <br>
         <hr class="my-4">
         <br>
-        <form method="post" action="---.jsp">
+        <form method="post" action="newUserReg2.jsp">
             <div class="container">
                 <div class="row">
                     <div class="col-sm">

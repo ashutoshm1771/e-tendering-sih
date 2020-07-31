@@ -4,7 +4,7 @@
 	String kind=(String)session.getAttribute("kind");
     String ot1=request.getParameter("otp");
     Class.forName("com.mysql.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/---","root","");
+    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
     Statement st = con.createStatement();
     ResultSet rs;
     rs = st.executeQuery("select otp from otp where userid='" + userid + "'");

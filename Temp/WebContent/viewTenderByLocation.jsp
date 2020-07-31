@@ -1,3 +1,4 @@
+<%@ page import="java.sql.*" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -37,7 +38,6 @@
 			height: 100px;
 			float:right;
 		}
-
 		.main-body{
 			margin-top:10px;
 			display: grid;
@@ -54,7 +54,6 @@
 			margin: 8px 0;
 			box-sizing: border-box;
 			}
-
 		aside{
 			background-color:#e8e8e8;
 		}
@@ -107,14 +106,7 @@
 		{
 			flex: 1;
 		}
-		.item-5
-		{
-			flex: 1;
-		}
-		.item-6
-		{
-			flex: 1;
-		}
+		
 		@media only screen and (max-width: 600px) 
 		{
 			body{
@@ -133,9 +125,9 @@
 </head>
 <body>
 	<div class="header">
-		<sat><img class="logo" src="images/satya3.png" alt="goi-logo"></sat>
-		<headtitle><img class="logo" src="images/topban.png" alt="goi-logo"></headtitle>
-		<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
+		<sat><img class="logo" src="satya3.png" alt="goi-logo"></sat>
+		<headtitle><img class="logo" src="topban.png" alt="goi-logo"></headtitle>
+		<mapindia><img class="logo1" src="india2.png" alt="goi-logo"></mapindia>
 	</div>
 <div class="main-body">
 <!--Aside starts from here-->	
@@ -155,12 +147,11 @@
 	<main>
         <%
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/---","root","");
-            Statement st = con.createStatement();
+            Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
             String location=request.getParameter("location");
             Statement st = con.createStatement();
 			ResultSet rs;
-			rs = st.executeQuery("select  from  ");
+			rs = st.executeQuery(" select * from  tenderdetails  where location=\""+request.getParameter("location")+"\"");
         %>
 			<div class="jumbotron">
 			    <h1 class="display-4">Tenders By Given Location</h1>
@@ -170,30 +161,30 @@
                     </div>
                     <div class="home-container">
 						<div class="flex item-2"> Tender Title</div>
-                        <div class="flex item-1"> e-Published Date</div>
+                    
                         <div class="flex item-3"> Closing Date</div>
 						<div class="flex item-4"> Bid Opening Date</div>
-						<div class="flex item-5"> Reference No</div>
-						<div class="flex item-6"> Organisation Chain</div>
+						<div class="flex item-2"> Reference No</div>
+					
                     </div>
                     
                         <div class="card-body">
-							<%
-							while(rs.next())
+                        <% 
+                            while(rs.next())
                             {
                                 out.print
                                 (
                                     "<div class='home-container-1'>"+
 										"<div class='flex item-1'>"+rs.getString(1)+"</div>"+
-										"<div class='flex item-2'>"+rs.getString(2)+"</div>"+
+									
 										"<div class='flex item-3'>"+rs.getString(3)+"</div>"+
 										"<div class='flex item-4'>"+rs.getString(4)+"</div>"+
-										"<div class='flex item-5'>"+rs.getString(5)+"</div>"+
-										"<div class='flex item-6'>"+rs.getString(6)+"</div>"+
+										"<div class='flex item-4'>"+rs.getString(2)+"</div>"+
+										
 									"</div>"
                                 );
-							}
-							%>
+                            }
+                        %>
                         </div>
                 </div>
 			</div>

@@ -40,7 +40,6 @@
 			height: 100px;
 			float:right;
 		}
-
 		.main-body{
 			margin-top:10px;
 			display: grid;
@@ -57,7 +56,6 @@
 			margin: 8px 0;
 			box-sizing: border-box;
 			}
-
 		aside{
 			background-color:#e8e8e8;
 			width:auto;
@@ -83,7 +81,6 @@
 			margin-left: 5px;
 			width:auto;
 		}
-
 		.datass
 		{
 			display: inline-block;
@@ -91,7 +88,6 @@
 			width: 100%;
 			background-color: maroon;
 		}
-
 		@media only screen and (max-width: 600px) 
 		{
 			body{

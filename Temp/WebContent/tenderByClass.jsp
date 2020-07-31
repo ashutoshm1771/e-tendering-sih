@@ -37,7 +37,6 @@
 			height: 100px;
 			float:right;
 		}
-
 		.main-body{
 			margin-top:10px;
 			display: grid;
@@ -54,7 +53,6 @@
 			margin: 8px 0;
 			box-sizing: border-box;
 			}
-
 		aside{
 			background-color:#e8e8e8;
 			width: auto;
@@ -80,7 +78,6 @@
 			margin-left: 5px;
 			width:auto;
 		}
-
 		
 		@media only screen and (max-width: 600px) 
 		{
@@ -125,17 +122,15 @@
                 <p class="lead">Please select the Classification from the drop down box below for more tenders related to that particular Form Of Contract.</p>
 			  <hr class="my-4">
 			  <p class="lead">
-				<form method="POST" action="index.jsp">
+				<form method="POST" action="viewTenderByClass.jsp">
                     <div class="dropdown">
-                        <label for="exampleFormEventType1">Department*</label>
+                        <label for="exampleFormEventType1">Class*</label>
     							<select class="form-control" name="sdept" id="exampleFormControlSelect2">
 
-      								<option>CSE</option>
-      								<option>ECE</option>
-      								<option>MECH</option>
-      								<option>CIVIL</option>
-      								<option>EEE</option>
-      								<option>IT</option>
+      								<option>Work</option>
+      								<option>Buy</option>
+      								<option>Supply</option>
+      								
 								</select>
 								<button type="submit" class="btn btn-primary">Submit</button>
                       </div>                    

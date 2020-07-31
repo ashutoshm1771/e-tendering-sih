@@ -1,3 +1,8 @@
+<%-- 
+    Document   : biddingdetails
+    Created on : 22 Jul, 2020, 9:50:28 AM
+    Author     : vasam
+--%>
 <!-- Cookie Army -->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -42,7 +47,6 @@
 			height: 100px;
 			float:right;
 		}
-
 		.main-body{
 			margin-top:10px;
 			display: grid;
@@ -59,7 +63,6 @@
 			margin: 8px 0;
 			box-sizing: border-box;
 			}
-
 		aside{
 			background-color:#e8e8e8;
 		}
@@ -84,7 +87,6 @@
 			margin-left: 5px;
 			width:auto;
 		}
-
 		.datass
 		{
 			display: inline-block;
@@ -92,7 +94,6 @@
 			width: 100%;
 			background-color: maroon;
 		}
-
 		@media only screen and (max-width: 600px) 
 		{
 			body{
@@ -112,7 +113,7 @@
 <body>
 <div class="header">
 	<sat><img class="logo" src="satya3.png" alt="goi-logo"></sat>
-	<headtitle><img class="logo" src="etendering.png" alt="goi-logo"></headtitle>
+	<headtitle><img class="logo" src="topban.png" alt="goi-logo"></headtitle>
 	<mapindia><img class="logo1" src="india2.png" alt="goi-logo"></mapindia>
 </div>
 
@@ -154,13 +155,13 @@
 			<td valign="top" class="page_content">
 				<!-- interface_elements -->				
 				<table align="center" border="0" cellpadding="0" cellspacing="0" width="92%">
-					
-					
+
+
 						<tbody>
 							<tr valign="middle">
 								<td class="text3" height="20">
 									<span>
-											
+
 											<span>
 												</span></span><table width="100%" cellspacing="0" cellpadding="0" class="list">
 										<tbody><tr>
@@ -181,7 +182,7 @@
 										<tr>
 											<td>&nbsp;</td>
 										</tr>																				
-										
+
 										<tr valign="middle">
 											<td class="text3" height="20">
 												<table width="100%" cellspacing="0" cellpadding="0" class="list">
@@ -199,7 +200,7 @@
 													<tr> 
 														<td width="10" background="images/fleftbg.png">&nbsp;</td>
 														<td valign="top" bgcolor="F8F8F8" class="td_space">
-										
+
 														<!-- Information Grid -->
 														<table width="100%" border="0" cellspacing="1" cellpadding="1">	
 															<tbody><tr>
@@ -215,11 +216,11 @@
 <option value="1">PAN Number</option>
 </select></td>
 																		</tr>
-																												
+
 																	</tbody></table>
 																</td>
 															</tr>
-															
+
 														</tbody></table>
 														</td>
 														<td width="16" background="images/frgtbg.png">&nbsp;</td>
@@ -240,16 +241,16 @@
 										</tr>
 										<tr align="center">
 											<td> 
-												
+
 											</td>
 										</tr>
-										
-										
+
+
 										<tr>
 											<td>&nbsp;</td>
 										</tr>
-										
-										
+
+
 										<tr>
 													<td>
 														<span>
@@ -258,12 +259,12 @@
 															<td width="5%">S.No</td>
 															<td width="15%">Bidder Name</td>
 															<td width="15%">Login ID</td>
-															
+
 															<td width="15%">Product Category</td>
-															
+
 															<td width="15%">Start Date</td>
 															<td width="15%">End Date</td>
-															
+
 															</tr>
 															<tr>
 																<td align="center" colspan="7" class="td_space">
@@ -276,13 +277,13 @@
 												<tr>
 													<td class="list_footer">&nbsp;</td>
 												</tr>
-											
-										
+
+
 									</tbody></table>
 								</td>
 							</tr>
 						</tbody>
-					
+
 				</table>
 				<!-- END: interface_elements -->
 			</td>
@@ -312,4 +313,4 @@
 </div>
 </div>
 </body>
-</html>
+</html> 

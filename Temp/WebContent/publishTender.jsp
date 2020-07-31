@@ -41,7 +41,6 @@
 			height: 100px;
 			float:right;
 		}
-
 		.main-body{
 			margin-top:10px;
 			display: grid;
@@ -58,7 +57,6 @@
 			margin: 8px 0;
 			box-sizing: border-box;
 			}
-
 		aside{
 			background-color:#e8e8e8;
 			width:auto;
@@ -84,7 +82,6 @@
 			margin-left: 5px;
 			width:auto;
 		}
-
 		.datass
 		{
 			display: inline-block;
@@ -92,7 +89,6 @@
 			width: 100%;
 			background-color: maroon;
 		}
-
 		@media only screen and (max-width: 600px) 
 		{
 			body{
@@ -126,7 +122,7 @@
       <br>
       <hr class="my-4">
       <h3 class="display-6" id="header" align="left">Tender Information</h3><br>
-            <form method="post" action="---.jsp">
+            <form method="post" action="publishTender2.jsp">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm">
@@ -143,7 +139,7 @@
                         <div class="col-sm">
                              <div class="form-group">
                               <label for="exampleInputPoy1">Tender Start Date*</label>
-                              <input type="number" class="form-control" name="tstartDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Starting Date of the Tender" required>
+                              <input type="text" class="form-control" name="tstartDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Starting Date of the Tender" required>
                                <small id="emailHelp" class="form-text text-muted">Format - DD/MM/YYYY </small>
                               </div>
                          </div>
@@ -161,7 +157,7 @@
                         <div class="col-sm">
                              <div class="form-group">
                               <label for="exampleFormControlFile1">Tender Document*</label>
-                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                              <input type="file" name="tdetails" class="form-control-file" id="exampleFormControlFile1">
                                <small id="emailHelp" class="form-text text-muted">Format - .pdf</small>
                               </div>
                          </div>
@@ -179,7 +175,7 @@
                         <div class="col-sm">
                              <div class="form-group">
                               <label for="exampleInputPoy1">Bid Opening Date*</label>
-                              <input type="number" class="form-control" name="bOpenDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Starting Date of the Bid Process" required>
+                              <input type="text" class="form-control" name="bOpenDate" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Starting Date of the Bid Process" required>
                                <small id="emailHelp" class="form-text text-muted">Format - DD/MM/YYYY </small>
                               </div>
                          </div>
@@ -198,30 +194,37 @@
                                  <div class="form-group">
 									<label for="exampleInputPoy1">Class*</label>
 									<select class="form-control" name="tclass" id="exampleFormControlSelect2">
-											<option value="1">Piece-work</option>
-											<option value="2">Lump-sum</option>
-											<option value="3">Multi-stage</option>
-											<option value="4">Supply</option>
-											<option value="5">Fixed-rate</option>
-											<option value="6">Turn-key</option>
-											<option value="7">Buy</option>
-											<option value="8">Works</option>
-											<option value="9">EPC Contract</option>
-											<option value="10">QCBS</option>
-											<option value="11">Tender cum Auction</option>
-											<option value="12">Sale</option>
-											<option value="13">Percentage</option>
-											<option value="14">PPP-BoT-Annuity</option>
-											<option value="15">PPP-BoT-Toll</option>
-											<option value="16">PPP-BoT-HAM</option>
-											<option value="17">PPP-BoT-ToT</option>
-											<option value="18">Item Rate</option>
-											<option value="19">EOI</option>
-											<option value="20">Empanelment</option>
-											<option value="21">PPP-DBFOT</option>
-											<option value="22">PPP-DBFO</option>
+											<option value="Piece-work">Piece-work</option>
+											<option value="Lump-sum">Lump-sum</option>
+											<option value="Multi-stage">Multi-stage</option>
+											<option value="Supply">Supply</option>
+											<option value="Fixed-rate">Fixed-rate</option>
+											<option value="Turn-key">Turn-key</option>
+											<option value="Buy">Buy</option>
+											<option value="Works">Works</option>
+											<option value="EPC Contract">EPC Contract</option>
+											<option value="QCBS">QCBS</option>
+											<option value="Tender cum Auction">Tender cum Auction</option>
+											<option value="Sale">Sale</option>
+											<option value="Percentage">Percentage</option>
+											<option value="PPP-BoT-Annuity">PPP-BoT-Annuity</option>
+											<option value="PPP-BoT-Toll">PPP-BoT-Toll</option>
+											<option value="PPP-BoT-HAM">PPP-BoT-HAM</option>
+											<option value="PPP-BoT-ToT">PPP-BoT-ToT</option>
+											<option value="Item Rate">Item Rate</option>
+											<option value="EOI">EOI</option>
+											<option value="Empanelment">Empanelment</option>
+											<option value="PPP-DBFOT">PPP-DBFOT</option>
+											<option value="PPP-DBFO">PPP-DBFO</option>
 									</select>
                                   </div>
+                         </div>
+                         <div class="col-sm">              
+                               <div class="form-group">
+                                      <label for="exampleInputPoy1">Reference No*</label>
+                                      <input type="text" class="form-control" name="did" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Expected Cost of the Tender" required>
+                                       
+                                </div>
                          </div>
                       </div>
                  </div>
@@ -233,8 +236,8 @@
                              <div class="form-group">
                               <label for="exampleInputPoy1">State*</label>
                                 <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="tstate" class="form-control" required></select><br>
-                                <label for="exampleInputPoy1">City*</label>
-                                <select id ="state" name="tcity" class="form-control" required></select>
+                                <label for="exampleInputPoy1">District*</label>
+                                <select id ="state" name="tdist" class="form-control" required></select>
                                 <script language="javascript">print_state("sts");</script>
                          </div>
                       </div>
@@ -251,8 +254,8 @@
                    </div>
                    <div class="col-sm">
                       <div class="form-group">
-                        <label for="exampleInputPoy1">District*</label>
-                        <input type="text" class="form-control" name="bdist" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="District" required>
+                        <label for="exampleInputPoy1">City*</label>
+                        <input type="text" class="form-control" name="bcity" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="City" required>
                       </div>
                    </div> 
                    

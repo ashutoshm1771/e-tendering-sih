@@ -149,7 +149,7 @@
 <!--Aside starts from here-->	
 	<aside>
 		<input type="button" class="links" value="Home" onclick="window.location.href = 'index.jsp';"></button><br>
-		<input type="button" class="links" value="MIS Reports" onclick="window.location.href = 'misReports.jsp';"></button><br>
+		<input type="button" class="links" value="MIS Reports" onclick="window.location.href = 'mislogin.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Location" onclick="window.location.href = 'tenderByLocation.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Organisation" onclick="window.location.href = 'tenderByOrg.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Classification" onclick="window.location.href = 'tenderByClass.jsp';"></button><br>
@@ -158,7 +158,7 @@
 		<input type="button" class="links" value="Cancelled/Retendered" onclick="window.location.href = 'cancelled.jsp';"></button><br>
     	<input type="button" class="links" value="Debarment List" onclick="window.location.href = 'debarment.jsp';"></button><br>
 	</aside>
-
+<% session.removeAttribute("username"); %>
 <!--Main starts from here-->	
 		<main>
 			<div class="card">
@@ -193,6 +193,7 @@
 								);
 							}
 							
+							con.close();
 						%>
 					</p></marquee>
 					</div>
@@ -212,23 +213,23 @@
 					<marquee direction="up" onmouseover="this.stop() ;" onmouseout="this.start() ;"> <p class="card-text">
 						<%	
 							Class.forName("com.mysql.jdbc.Driver");
-							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
-							Statement st = con.createStatement();
-							ResultSet rs;
-							rs = st.executeQuery("select * from tenderdetails where tenderStatus="corrected"");
-							while(rs.next())
+							Connection con1 = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
+							Statement st1 = con1.createStatement();
+							ResultSet rs1;
+							rs1 = st1.executeQuery("select * from tenderdetails where classification=\"work\"");
+							while(rs1.next())
 							{
 							out.print
 							(
 									"<div class='home-container-1'>"+
-					                        "<div class='flex item-1'>"+rs.getString(1)+"</div>"+
-					                        "<div class='flex item-2'>"+rs.getString(2)+"</div>"+
-					                        "<div class='flex item-3'>"+rs.getString(3)+"</div>"+
-					                        "<div class='flex item-4'>"+rs.getString(4)+"</div>"+
+					                        "<div class='flex item-1'>"+rs1.getString(1)+"</div>"+
+					                        "<div class='flex item-2'>"+rs1.getString(2)+"</div>"+
+					                        "<div class='flex item-3'>"+rs1.getString(3)+"</div>"+
+					                        "<div class='flex item-4'>"+rs1.getString(4)+"</div>"+
 					                    "</div>"
 								);
 							}
-							
+							con1.close();
 						%>
 					</p></marquee>
 					</div>

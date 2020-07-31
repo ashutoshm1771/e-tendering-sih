@@ -1,3 +1,9 @@
+<%-- 
+    Document   : cancelled
+    Created on : 22 Jul, 2020, 9:52:46 AM
+    Author     : vasam
+--%>
+
 <!-- Cookie Army -->
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
@@ -42,7 +48,6 @@
 			height: 100px;
 			float:right;
 		}
-
 		.main-body{
 			margin-top:10px;
 			display: grid;
@@ -59,7 +64,6 @@
 			margin: 8px 0;
 			box-sizing: border-box;
 			}
-
 		aside{
 			background-color:#e8e8e8;
 		}
@@ -84,7 +88,6 @@
 			margin-left: 5px;
 			width:auto;
 		}
-
 		.datass
 		{
 			display: inline-block;
@@ -92,7 +95,6 @@
 			width: 100%;
 			background-color: maroon;
 		}
-
 		@media only screen and (max-width: 600px) 
 		{
 			body{
@@ -111,9 +113,9 @@
 </head>
 <body>
 <div class="header">
-	<sat><img class="logo" src="images/satya3.png" alt="goi-logo"></sat>
-	<headtitle><img class="logo" src="images/etendering.png" alt="goi-logo"></headtitle>
-	<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
+	<sat><img class="logo" src="satya3.png" alt="goi-logo"></sat>
+	<headtitle><img class="logo" src="etendering.png" alt="goi-logo"></headtitle>
+	<mapindia><img class="logo1" src="india2.png" alt="goi-logo"></mapindia>
 </div>
 
 <div class="datass">
@@ -128,19 +130,17 @@
 		<input type="button" class="links" value="Tender By Organisation" onclick="window.location.href = 'tenderByOrg.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Classification" onclick="window.location.href = 'tenderByClass.jsp';"></button><br>
 		<input type="button" class="links" value="Tenders in Archive" onclick="window.location.href = 'tendersInArchive.jsp';"></button><br>
-		<input type="button" class="links" value="Announcements" onclick="window.location.href = 'announcement.jsp';"></button><br>
-		<input type="button" class="links" value="Cancelled/Retendered" onclick="window.location.href = 'cancelled.jsp';"></button><br>
-    	<input type="button" class="links" value="Debarment List" onclick="window.location.href = 'debarment.jsp';"></button><br>
+
 	</aside>
 
 <!--Main starts from here-->	
 		<main>
 		<div id="content">
-		
-		
+
+
 		<td class="page_content" valign="top">
 							<!-- Page content starts here -->
-								
+
 	<table width="100%" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
 		<tbody><tr>
 			<td valign="top" height="100%">
@@ -184,7 +184,7 @@
 													<tr>
 														<td>&nbsp;</td>
 													</tr>
-													
+
 													<tr>
 														<td>														
 															<table width="100%" cellspacing="0" cellpadding="0">
@@ -235,14 +235,14 @@ zG5F6QgMDEx9YIbIetxQkhmYoO+M9EPWGnQFptKWZKumtizLwFiWZVmWZRFLIpdR1rXleHdgboC7
 6hydeL0opefoALYsA2M5oGrP02AaGM+zrB8/AAYhNSAv/K5gAAAAAElFTkSuQmCC" class="image_style">
 																						   &nbsp; &nbsp;
 																							<button type="button" name="captcha" id="captcha" style="border:0px; background-color:transparent;"><img src="refresh_new.png" border="0"> Refresh</button>
-																						   
+
 																						   </td>
 																						   </tr>																			
 																						</tbody></table>
 																					</td>
 																				 </tr>	
-																				
-																																		
+
+
 																			<tr>																									
 																				<td>&nbsp;</td>
 																			</tr>
@@ -265,12 +265,12 @@ zG5F6QgMDEx9YIbIetxQkhmYoO+M9EPWGnQFptKWZKumtizLwFiWZVmWZRFLIpdR1rXleHdgboC7
 													<tr>
 														<td class="td_space">&nbsp;</td>
 													</tr>																
-													
-													
+
+
 													<tr>
 														<td>&nbsp;</td>
 													</tr>
-													
+
 													<tr>
 															<td>
 																<table width="100%" cellspacing="0" cellpadding="0" class="list_table">
@@ -299,8 +299,8 @@ zG5F6QgMDEx9YIbIetxQkhmYoO+M9EPWGnQFptKWZKumtizLwFiWZVmWZRFLIpdR1rXleHdgboC7
 														<tr>
 															<td class="list_footer">&nbsp;</td>
 														</tr>
-													
-													
+
+
 													<tr>
 														<td>&nbsp;</td>
 													</tr>
@@ -308,7 +308,7 @@ zG5F6QgMDEx9YIbIetxQkhmYoO+M9EPWGnQFptKWZKumtizLwFiWZVmWZRFLIpdR1rXleHdgboC7
 											  <!-- END: interface_elements -->
 										</td>
 									</tr>
-									
+
 								</tbody></table>
 							</td>
 						</tr>								
@@ -326,4 +326,4 @@ zG5F6QgMDEx9YIbIetxQkhmYoO+M9EPWGnQFptKWZKumtizLwFiWZVmWZRFLIpdR1rXleHdgboC7
 </div>
 </div>
 </body>
-</html>
+</html> 

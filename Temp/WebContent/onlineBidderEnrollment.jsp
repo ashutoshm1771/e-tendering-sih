@@ -43,7 +43,6 @@
 			height: 100px;
 			float:right;
 		}
-
 		.main-body{
 			margin-top:10px;
 			display: grid;
@@ -60,7 +59,6 @@
 			margin: 8px 0;
 			box-sizing: border-box;
 			}
-
 		aside{
 			background-color:#e8e8e8;
 			width:auto;
@@ -86,7 +84,6 @@
 			margin-left: 5px;
 			width:auto;
 		}
-
 		.datass
 		{
 			display: inline-block;
@@ -94,7 +91,6 @@
 			width: 100%;
 			background-color: maroon;
 		}
-
 		@media only screen and (max-width: 600px) 
 		{
 			body{
@@ -141,7 +137,7 @@
       <div align="right"><a class="btn btn-light btn-lg" href="index.jsp" role="button">Back</a></div>
       <br>
       <hr class="my-4">
-            <form method="post" action="___.jsp" id="CorporateTendererForm" autocomplete="off">
+            <form method="post" action="onlineBidderEnrollment2.jsp" id="CorporateTendererForm" autocomplete="off">
 				<div class="jumbotron">
 					<div class="container">
 						<div class="row">
@@ -637,7 +633,7 @@
 							 <div class="col-sm">
 									 <div class="form-group">
 										  <label for="exampleInputReg1">Company Category*</label>
-										  		<select class="form-control" name="legalstatus" id="exampleFormControlSelect2">
+										  		<select class="form-control" name="comcat" id="exampleFormControlSelect2">
 													<option value="1">Micro Unit as per MSME</option>
 													<option value="2">Small Unit as per MSME</option>
 													<option value="3">Medium Unit as per MSME</option>
@@ -683,8 +679,8 @@
 										 <div class="form-group">
 										  <label for="exampleInputPoy1">State*</label>
 											<select onchange="print_city('state', this.selectedIndex);" id="sts" name ="cstate" class="form-control" ></select><br>
-											<label for="exampleInputPoy1">City*</label>
-											<select id ="state" name="ccity" class="form-control" ></select>
+											<label for="exampleInputPoy1">District*</label>
+											<select id ="state" name="cdist" class="form-control" ></select>
 											<script language="javascript">print_state("sts");</script>
 									 </div>
 								  </div>
@@ -701,8 +697,8 @@
 								   </div>
 								   <div class="col-sm">              
 										 <div class="form-group">
-												<label for="exampleInputPoy1">District*</label>
-												<input type="text" class="form-control" name="cdist" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="District" >
+												<label for="exampleInputPoy1">City*</label>
+												<input type="text" class="form-control" name="ccity" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="District" >
 												 <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small> -->
 										  </div>
 								   </div>
@@ -929,7 +925,7 @@
 									 <div class="col-sm">              
 										   <div class="form-group">
 												  <label for="exampleInputPoy1">State / City*</label>
-												  <input type="text" class="form-control" name="ccity" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Enter the City or State" >
+												  <input type="text" class="form-control" name="cscity" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Enter the City or State" >
 												   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small> -->
 											</div>
 									 </div>
@@ -938,7 +934,7 @@
 							 <div class="container">
              					<div class="form-group">
 									   <label for="exampleInputClg1">Postal Code*</label>
-									   <input type="number" class="form-control" name="cpincode" id="exampleInputClg1"  aria-describedby="colHelp"  placeholder="Enter your postal code" >
+									   <input type="number" class="form-control" name="cpostalcode" id="exampleInputClg1"  aria-describedby="colHelp"  placeholder="Enter your postal code" >
 									   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
 								</div>
 						  </div>
@@ -992,7 +988,7 @@
 							 <div class="col-sm">              
 								   <div class="form-group">
 										  <label for="exampleInputPoy1">Designation*</label>
-										  <input type="text" class="form-control" name="bphno" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Enter the contact person's designation" required>
+										  <input type="text" class="form-control" name="disignation" id="exampleInputPoy1"  aria-describedby="poyHelp"  placeholder="Enter the contact person's designation" required>
 										   <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your contact number with anyone else.</small> -->
 									</div>
 							 </div>
@@ -1223,14 +1219,23 @@
 									</div>
 							</div>
 						</div>
+						<div class="container">
+						
+                   </div>
+                   </div>
+						
+						
 					</div>
 				</div>
 				<div class="jumbotron">
-				<center><div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><center><br>
+		  	<center><div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><center><br>
+		
 				<div class="text-center">
-					<button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
 				</div>
-				</div>
+                
+				
             </form>
 	</main>
 <!--Login starts from here-->	

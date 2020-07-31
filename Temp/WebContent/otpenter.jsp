@@ -144,7 +144,7 @@
 
   <br>
   <br><br>
-    <form method="post" action="otpvali.jsp">
+    <form method="post" action="empOtpVali.jsp">
       <div class="container">
         <div class="jumbotron">
             <div class="text-center">
@@ -160,7 +160,7 @@
     <br>
 <div class="container">
            <div class="text-center">
-          <button type="submit" class="btn btn-primary">Get OTP</button>
+          <button type="submit" class="btn btn-primary">SUBMIT OTP</button>
           </div>
             </div>
           </div>
