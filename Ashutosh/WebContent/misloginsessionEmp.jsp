@@ -80,27 +80,12 @@ try
        String username=request.getParameter("username");
       // String password=request.getParameter("password");
        session.setAttribute("username",username);
-       ResultSet rs=st.executeQuery("select bidderid,bpass from bidder where bidderid='"+username+"'");
+       ResultSet rs=st.executeQuery("select empid,pass from govtemp where empid='"+username+"'");
        
        if(rs.next())
        {
-       String r1=rs.getString(1);
-       String s1=rs.getString(2);
-      
-           if((r1.equals(username)&&s1.equals(pwd)))
-               {session.setAttribute("username",username);
-                response.sendRedirect("tenderlist.jsp");
-               }   
-           else
-        	   response.sendRedirect("error.jsp");
-       }
-       else 
-       {
-    	   ResultSet rs1=st.executeQuery("select empid,pass from govtemp where empid='"+username+"'");
-    	   if(rs1.next())
-    	   {
-	    	   String r2=rs1.getString(1);
-	           String s2=rs1.getString(2);
+	    	   String r2=rs.getString(1);
+	           String s2=rs.getString(2);
 	           if(r2.equals(username)&&(s2.equals(pwd)))
 	           {
 	        	   session.setAttribute("username",username);
@@ -115,8 +100,6 @@ try
     	   {
     		   response.sendRedirect("error.jsp");
     	   }
-             
-       }
      
        %>               
      </body>

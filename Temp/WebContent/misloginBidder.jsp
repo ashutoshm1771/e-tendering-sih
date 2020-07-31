@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Etendering</title>
+<link rel="stylesheet" href="mislogin.css" >
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -136,31 +137,33 @@
         <mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
     </div>
     <main>
-        <div class="container">
-            <div class="jumbotron">
-                <div class="text-center">
-                    <h1 class="display-4">Login as?</h1>
-                    </div>
-                    <hr class="my-4"><br>
-                       <div class="container classic">
-                        <div class="row row-cols-2">
-                            <div class="col"> 
-                                      <a class="btn btn-dark btn-lg" href="misloginBidder.jsp" role="button">Bidder</a>
-                              </div>
-                    
-                    <div class="col">
-                        <div class="text-center">
-                       <a class="btn btn-dark btn-lg" href="misloginEmp.jsp" role="button">Nodal Officer</a>
-                         </div>
-                    </div>
-                 </div>
-             </div>
-            
-              
-               
-           </div>
+    <div class="jumbotron">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <h1 class="text-center login-title">Bidder Login</h1>
+            <hr class="my-4">
+            <div class="account-wall">
+                <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
+                    alt="">
+                <form class="form-signin" action="misloginsessionBid.jsp">
+                <input type="text" name="username" class="form-control" placeholder="Login Id" required autofocus>
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">
+                    Sign in</button>
+                <label class="checkbox pull-left">
+                    <input type="checkbox" value="remember-me">
+                    Remember me
+                </label>
+                <a href="mislogin.jsp" class="pull-right need-help">Back </a><span class="clearfix"></span>
+                </form>
+            </div>
+            <a href="newUserReg.jsp" class="text-center new-account">New User? Register Here! </a>
+            <a href="onlineBidderEnrollment.jsp" class="text-center new-account">Online Bidder Enrollment</a><br>
         </div>
-
+    </div>
+</div>
+</div>
 </main>
 </body>
 </html>
