@@ -19,151 +19,86 @@
 	  });
 	};
   </script>
-	<style type="text/css">
-		.header{
-			display: grid;
-			grid-template: "sat headtitle mapindia";
-			grid-template-columns: auto auto auto;
-			grid-template-rows: auto auto auto auto auto;
-			height: 100%;
-			padding: 2px;
-			color:black;
-			font-size: 2em;
-		}
-		main{
-			margin-left: 10px;
-		}
-		.logo
-		{
-			height: 100px;
-		}
-		.logo1
-		{
-			height: 100px;
-			float:right;
-		}
-		.main-body{
-			margin-top:10px;
-			display: grid;
-			grid-template:"aside main login";
-			grid-gap:20px;
-		}
-		.form-group{
-			margin-left: 15px;
-		}
-		input[type=email],input[type=password]
-		 	{
-			width: 80%;
-			padding: 12px 20px;
-			margin: 8px 0;
-			box-sizing: border-box;
-			}
-		aside{
-			background-color:#e8e8e8;
-			width:auto;
-		}
-		
-		login{
-			justify-content: end;
-		}
-		.login-form{
-			background-color: #e8e8e8;
-			width: 60%;
-			margin-left: 10px;
-			margin-right: 10px;
-			float: center;
-		}
-		.links
-		{
-			border-radius: 10px;
-			padding: 5PX;
-			width: 	180PX;
-		}
-		.g-recaptcha{
-			margin-left: 5px;
-			width:auto;
-		}
-		.datass
-		{
-			display: inline-block;
-			color: white;
-			width: 100%;
-			background-color: maroon;
-		}
-		.home-container
-		{
-			display: flex;
-			width: 100%;
-			border: 2px solid black;
-		}
-		.home-container-1
-		{
-			display: flex;
-			width: 100%;
-			border: 2px dotted black;
-		}
-		.item-1
-		{
-			flex: 1;
-		}
-		.item-2
-		{
-			flex: 1;
-		}
-		.item-3
-		{
-			flex: 1;
-		}
-		.item-4
-		{
-			flex: 1;
-		}
-		@media only screen and (max-width: 600px) 
-		{
-			body{
-				font-size: 2em;
-			}
-			.main-body{
-			margin-top:10px;
-			display: grid;
-			grid-template:"	main main"
-							"aside aside"
-							"login login";
-			grid-gap:20px;
-		}
-		}
-		
-	</style>
+  <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
-<div class="header">
-	<sat><img class="logo" src="images/satya3.png" alt="goi-logo"></sat>
-	<headtitle><img class="logo" src="images/topban.png" alt="goi-logo"></headtitle>
-	<mapindia><img class="logo1" src="images/india2.png" alt="goi-logo"></mapindia>
+<div class="navbar">
+	<div class="flex item-12"><img class="logo" src="images/satya3.png" alt="goi-logo" class="left-img"></div>
+    <div class="flex item-13"><img class="logo" src="images/topbanb.png" alt="goi-logo" class="img-ban" style="width: 144%;"></div>
+    <div class="flex item-14"><img class="logo1" src="images/satya3.png" alt="goi-logo" class="right-img"></div>
 </div>
 
-<div class="datass">
-28th APril,2020
+<div class="datass">    
+<div class="flex datas1" id="date1"></div>
+<div class="flex datas2"><marquee>eTendering System - Government of India
+</marquee></div>
+</div>
+<div class="menu">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span id="If">
+        <span id="For">
+          
+            <span>
+              <a id="link1" name="link1" title="Search" class="Menu" href="/eprocure/app?page=FrontEndAdvancedSearch&amp;service=page" target="_self">Search</a>
+          </span>
+          <span class="divider1" id="Insert_2">|</span>
+      </span><span id="For_0">
+          
+            <span>
+              <a id="link1" name="link1" title="Active Tenders" class="Menu" href="/eprocure/app?page=FrontEndLatestActiveTenders&amp;service=page" target="_self">Active Tenders</a>
+          </span>
+          <span class="divider1" id="Insert_2_0">|</span>
+      </span><span id="For_1">
+          
+            <span>
+              <a id="link1" name="link1" title="Tenders by Closing Date" class="Menu" href="/eprocure/app?page=FrontEndListTendersbyDate&amp;service=page" target="_self">Tenders by Closing Date</a>
+          </span>
+          <span class="divider1" id="Insert_2_1">|</span>
+      </span><span id="For_2">
+          
+            <span>
+              <a id="link1" name="link1" title="Corrigendum" class="Menu" href="/eprocure/app?page=FrontEndLatestActiveCorrigendums&amp;service=page" target="_self">Corrigendum</a>
+          </span>
+          <span class="divider1" id="Insert_2_2">|</span>
+      </span><span id="For_3">
+          
+            <span>
+              <a id="link1" name="link1" title="Results of Tenders" class="Menu" href="/eprocure/app?page=ResultOfTenders&amp;service=page" target="_self">Bid Awards</a>
+          </span>
+          <span class="divider1" id="Insert_2_3">|</span>
+      </span><span id="For_4">
+          <span id="If_0_4">
+              <a id="link1" name="link1" title="CPPP Home" class="Menu" href="http://eprocure.gov.in/cppp/" target="_self">CPPP Home</a>
+            </span>
+            
+          
+      </span>		
+</span>
 </div>
 	<div class="main-body">
 <!--Aside starts from here-->	
-	<aside>
+	<div class="flex aside">
 		<input type="button" class="links" value="Home" onclick="window.location.href = 'index.jsp';"></button><br>
-		<input type="button" class="links" value="MIS Reports" onclick="window.location.href = 'misReports.jsp';"></button><br>
+		<input type="button" class="links" value="MIS Reports" onclick="window.location.href = 'mislogin.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Location" onclick="window.location.href = 'tenderByLocation.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Organisation" onclick="window.location.href = 'tenderByOrg.jsp';"></button><br>
 		<input type="button" class="links" value="Tender By Classification" onclick="window.location.href = 'tenderByClass.jsp';"></button><br>
 		<input type="button" class="links" value="Tenders in Archive" onclick="window.location.href = 'tendersInArchive.jsp';"></button><br>
 		<input type="button" class="links" value="Announcements" onclick="window.location.href = 'announcement.jsp';"></button><br>
 		<input type="button" class="links" value="Cancelled/Retendered" onclick="window.location.href = 'cancelled.jsp';"></button><br>
-    	<input type="button" class="links" value="Debarment List" onclick="window.location.href = 'debarment.jsp';"></button><br>
-	</aside>
-
+    	<input type="button" class="links" value="Debarment List" onclick="window.location.href = 'debarment.jsp';"></button><br> 
+    </div>
+<% session.removeAttribute("username"); %>
 <!--Main starts from here-->	
-		<main>
-			<div class="card">
+		<div class="flex main">
+			<div class="card text-center">
 				<div class="card-header">
-					Latest Tender
+					<h4>Latest Tender</h4>
 				</div>
 				<div class="home-container">
 					<div class="flex item-1"> Tender Title</div>
@@ -174,32 +109,13 @@
 				
 					<div class="card-body">
 					<marquee direction="up" onmouseover="this.stop() ;" onmouseout="this.start() ;"> <p class="card-text">
-						<%	
-							Class.forName("com.mysql.jdbc.Driver");
-							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
-							Statement st = con.createStatement();
-							ResultSet rs;
-							rs = st.executeQuery("select * from tenderdetails ");
-							while(rs.next())
-							{
-							out.print
-							(
-									"<div class='home-container-1'>"+
-					                        "<div class='flex item-1'>"+rs.getString(1)+"</div>"+
-					                        "<div class='flex item-2'>"+rs.getString(2)+"</div>"+
-					                        "<div class='flex item-3'>"+rs.getString(3)+"</div>"+
-					                        "<div class='flex item-4'>"+rs.getString(4)+"</div>"+
-					                    "</div>"
-								);
-							}
-							
-						%>
+						p
 					</p></marquee>
 					</div>
-			</div>
-			<div class="card">
-				<div class="card-header">
-					Latest Corrigendums
+			</div><br>
+			<div class="card text-center">
+				<div class="card-header" >
+					<h4>Latest Corrigendums</h4>
 				</div>
 				<div class="home-container">
 					<div class="flex item-1"> Tender Title</div>
@@ -210,51 +126,44 @@
 				
 					<div class="card-body">
 					<marquee direction="up" onmouseover="this.stop() ;" onmouseout="this.start() ;"> <p class="card-text">
-						<%	
-							Class.forName("com.mysql.jdbc.Driver");
-							Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
-							Statement st = con.createStatement();
-							ResultSet rs;
-							rs = st.executeQuery("select * from tenderdetails where tenderStatus="corrected"");
-							while(rs.next())
-							{
-							out.print
-							(
-									"<div class='home-container-1'>"+
-					                        "<div class='flex item-1'>"+rs.getString(1)+"</div>"+
-					                        "<div class='flex item-2'>"+rs.getString(2)+"</div>"+
-					                        "<div class='flex item-3'>"+rs.getString(3)+"</div>"+
-					                        "<div class='flex item-4'>"+rs.getString(4)+"</div>"+
-					                    "</div>"
-								);
-							}
-							
-						%>
+						o
 					</p></marquee>
 					</div>
 			</div>
-	</main>
+        </div>
 <!--Login starts from here-->	
-		<login>
-			<form class="login-form">
-				<div class="card-header">Login</div>
-				<div class="form-group">
-					<label for="exampleInputEmail1">Email address</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-					<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-				</div>
-					<div class="form-group">
-						<label for="exampleInputPassword1">Password</label>
-						<input type="password" class="form-control" id="exampleInputPassword1">
-					</div>
-							<div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
-							&nbsp; &nbsp; <a href="newUserReg.jsp">New User? Register Here!</a><br><br>&nbsp; &nbsp;
-							<a href="onlineBidderEnrollment.jsp">Online Bidder Enrollment</a><br><br>&nbsp; &nbsp;
-							<button type="submit" class="btn btn-primary">Login</button>
-							<br><br>
-							</form>
-		</login>
+		<div class="flex login">
+                <form class="login-form">
+                    <div class="card-header"><h2>Login</h2></div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                    </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                                <div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
+                                &nbsp; &nbsp; <a href="newUserReg.jsp">New User? Register Here!</a><br><br>&nbsp; &nbsp;
+                                <a href="onlineBidderEnrollment.jsp">Online Bidder Enrollment</a><br><br>&nbsp; &nbsp;
+                                <button type="submit" class="btn btn-primary">Login</button>
+                                <br><br>
+                    </form>
+        </div>
 </div>
-</div>
+<footer class="footer-box">
+    <div class="container">
+      <span class="text-muted">Contents owned and maintained by concerned Departments in coordination with Finance Department and Information Technology Department, Government of India.</span>
+    </div>
+  </footer>
+<script>
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+    today = mm + '/' + dd + '/' + yyyy;
+    document.getElementById("date1").innerHTML=today;
+</script>
 </body>
 </html>
