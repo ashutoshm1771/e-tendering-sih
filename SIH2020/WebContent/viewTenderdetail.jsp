@@ -127,6 +127,35 @@
               %>
             </p>
         </div>
+        <div class="home-container">
+          <div class="flex item-1"> Bidder ID</div>
+          <div class="flex item-2"> Company Name</div>
+          <div class="flex item-3"> Amount</div>
+          <div class="flex item-4"> Bid Application Date</div>
+      </div>
+        <div class="card-body">
+          <p class="card-text">
+            <%	
+                Class.forName("com.mysql.jdbc.Driver");
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
+                Statement st = con.createStatement();
+                ResultSet rs;
+                rs = st.executeQuery("select * from --- where referenceno='---' ");
+                if(rs.next())
+                {
+                out.print
+                (
+                        "<div class='home-container-1'>"+
+                                "<div class='flex item-1'>"+rs.getString(1)+"</div>"+
+                                "<div class='flex item-2'>"+rs.getString(2)+"</div>"+
+                                "<div class='flex item-3'>"+rs.getString(3)+"</div>"+
+                                "<div class='flex item-4'>"+rs.getString(4)+"</div>"+
+                            "</div>"
+                    );
+                }
+            %>
+          </p>
+      </div>
 </div>
 <!--Login starts from here-->	
 		
