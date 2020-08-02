@@ -127,6 +127,10 @@
               %>
             </p>
         </div>
+        <div class="card">
+          <div class="card-header">
+              Bidders who applied to this Tender.
+          </div>
         <div class="home-container">
           <div class="flex item-1"> Bidder ID</div>
           <div class="flex item-2"> Company Name</div>
