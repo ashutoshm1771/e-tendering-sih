@@ -22,7 +22,7 @@
 	  });
 	};
   </script>
-  <link rel="stylesheet" href="css/global1.css">
+  <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
 <div class="navbar">
@@ -83,53 +83,35 @@
       </span>		
 </span>
 </div>
+	<div class="main-body">
 <!--Aside starts from here-->	
-        
-<!--Main starts from here-->	
-<div class="jumbotron" style="width: 50%; margin-left: 450px;">
-  <div class="text-center">
-    <div align="right"><a class="btn btn-light btn-lg" href="viewTenders.jsp" role="button">Back</a></div>
-    <h1 class="display-4">Selected Tender</h1>
-    </div>
-    <div align="left"><a class="btn btn-dark btn-lg" href="updateTender.jsp" role="button">Update this Tender</a></div>
-    
-    <hr class="my-4">
-    <div class="card">
-        <div class="card-header">
-            List View
-        </div>
-        <div class="home-container">
-            <div class="flex item-1"> Tender Title</div>
-            <div class="flex item-2"> Reference No</div>
-            <div class="flex item-3"> Closing Date</div>
-            <div class="flex item-4"> Bid Opening Date</div>
-        </div>
-        <div class="card-body">
-            <p class="card-text">
-              <%	
-                  Class.forName("com.mysql.jdbc.Driver");
-                  Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/sih","root","tulasidevi@11");
-                  Statement st = con.createStatement();
-                  ResultSet rs;
-                  rs = st.executeQuery("select * from tenderdetails where referenceno='SESSIONVARIABLE TENDERID'");
-                  if(rs.next())
-                  {
-                  out.print
-                  (
-                          "<div class='home-container-1'>"+
-                                  "<div class='flex item-1'>"+rs.getString(1)+"</div>"+
-                                  "<div class='flex item-2'>"+rs.getString(2)+"</div>"+
-                                  "<div class='flex item-3'>"+rs.getString(3)+"</div>"+
-                                  "<div class='flex item-4'>"+rs.getString(4)+"</div>"+
-                              "</div>"
-                      );
-                  }
-              %>
-            </p>
-        </div>
-</div>
+
+<!--Main starts from here-->
+			<div class="jumbotron" style="width: 50%; margin-left: 500px;">
+                <h1 class="display-4">Enter The OTP you received.</h1>
+                <p class="lead">OTP verification.</p>
+                <hr class="my-4">
+                <p class="lead">
+                  <form method="POST" action="---.jsp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                 <div class="form-group">
+                                    <label for="exampleInputPoy1">Enter the OTP you received</label>
+                                    <input type="text" class="form-control" name="torg" id="exampleInputClg1"  aria-describedby="colHelp" placeholder="OTP Number" required>
+                                    <small id="emailHelp" class="form-text text-muted">Received in Your Phone Number</small>
+                             </div>
+                          </div>
+                     </div>
+                    </div>  
+                    &nbsp; &nbsp; <hr class="my-4">
+                       <div class="g-recaptcha" data-sitekey="6Lenzu0UAAAAANwru86INC1KaBKQ-llAVyRItx-s"></div><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;	<button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+                </p>
+            </div>
+
 <!--Login starts from here-->	
-		
 
 <footer class="footer-box">
     <div class="container">
