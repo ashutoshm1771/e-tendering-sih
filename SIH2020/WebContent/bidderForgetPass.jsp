@@ -98,7 +98,7 @@
                             <div class="col-sm">
                                  <div class="form-group">
                                     <label for="exampleInputPoy1">Enter Your New Password</label>
-                                    <input type="password" class="form-control" name="bnewpass" id="exampleInputClg1"  aria-describedby="colHelp" placeholder="New Password" required>
+                                    <input type="password" pattern="^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,8}$" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 ,atmost 8 characters" class="form-control" name="bnewpass" id="exampleInputClg1"  aria-describedby="colHelp" placeholder="New Password" required>
                                     <!-- <small id="emailHelp" class="form-text text-muted">Format ---- ---- ----</small> -->
                              </div>
                           </div>
